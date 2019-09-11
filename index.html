@@ -3,14 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Главная</title>
-<link rel="stylesheet" href="css/Untitled-2.css">
+<!--<link rel="stylesheet" href="css/Untitled-2.css"> временно отключил стили-->
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
-  <div class="container_part1">
-    <header class="header"> <img src="img/nerds-logo.png" alt="Nerds">
+<div class="container"> <!--Не совсем понятно замечание про обилие контейнерами. У меня каждый контенер выполняет свою функцию, например, этот контейнер отвечает за фоновый цвет, как бы мы не меняли масштаб страницы фоновый цвет останется. На каждй раздел сайта, header, main, footer я делаю свой контейнер. На мой взгляд это делает их независимыми. Если нужно будет переделать в будущем сетку только hedera, все не полетит в тар тарары)) Прислушиваясь к твоим рекомендациям я постарался сократить кол-во оберток, ну или как минимум отдал их функцию другим элементам 
+По поводу заголовков, я от них полностью откажусь. Один единственный заголовок h1 я сделаю видимым ТООЛЬКО для ридера-->
+  <header class="container_part1"> 
+    <!--   Эти контейнером определяется центрирование контента, устанавливается ширина-->
+    <section class="header"> <a class="logotype" href=""><img src="img/nerds-logo.png" alt="Nerds"></a> 
+      <!--Замечание устранил, ошибку понял-->
       <nav class="menu_header__part1">
         <ul>
           <li><a href="#">Студия</a> </li>
@@ -19,61 +22,60 @@
           <li><a href="#">Контакты</a> </li>
         </ul>
       </nav>
-      <div class="basket"> <span class="basket__text"> Корзина </span> </div>
-    </header>
+      <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </section>
     <section class="promo_slids">
       <div class="promo">
-        <h2 class="title_promo">Долго, дорого, скрупулезно.</h2>
+        <p class="title_promo">Долго, дорого, скрупулезно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <input type="button" name="all_slide" value="Узнать больше">
+        <a href="#" class="all_slide">Узнать больше</a>
       </div>
       <img src="img/slide1.png" alt="3 телефона"> </section>
-  </div>
+    <img src="img/slide2.png" alt="2 компьютера"> <img src="img/slide3.png" alt="2 планщета"> </header>
 </div>
-<div class="conteiner2">
+<main>
   <section class="product">
     <div class="product_cart"> <img src="img/illustration-1.png" alt="Изображение к карточке веб-сайты">
-      <h3>ВЕБ-САЙТЫ</h3>
+      <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-      <input type="button" name="order_1" value="ЗАКАЗАТЬ">
+      <a href="#" class="order_1">ЗАКАЗАТЬ</a>
     </div>
     <div class="product_cart"> <img src="img/illustration-2.png" alt="Изображение к карточке приложения">
-      <h3>ПРИЛОЖЕНИЯ</h3>
+      <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-      <input type="button" name="order_2" value="ЗАКАЗАТЬ">
+      <a href="#" class="order_2">ЗАКАЗАТЬ</a>
     </div>
     <div class="product_cart"> <img src="img/illustration-3.png" alt="Изображение к карточке Презентации">
-      <h3>ПРЕЗЕНТАЦИИ</h3>
+      <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
-      <input type="button" name="order_3" value="ЗАКАЗАТЬ">
+      <a href="#" class="order_3">ЗАКАЗАТЬ</a>
     </div>
   </section>
   <section class="aboutMe">
     <div class="aboutMe__text">
-      <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+      <p class="aboutMe__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <h4>Выполняем заказы на разработку:</h4>
+      <span class="ulTitle">Выполняем заказы на разработку:</span>
       <ul>
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <div class="aboutMe__percent"> <img src="img/nerds-illustration.png" alt="Илюстрация логотипа Nerds">
-      <h4>с 2004 года Любим точность во всем:</h4>
+    <div class="aboutMe__percent"> <img src="img/nerds-illustration.png" alt="Илюстрация логотипа Nerds"> <span>с 2004 года Любим точность во всем:</span>
       <div class="persent_container">
-        <div>
+        <div> 
+          <!--            Эти контейнеры я использую построения сетки на flex-ах-->
           <p>146<sup>%</sup></p>
-          <h5>Уровень самоотдачи</h5>
+          <p>Уровень самоотдачи</p>
         </div>
         <div>
           <p>100<sup>%</sup></p>
-          <h5>Соблюдение сроков</h5>
+          <p>Соблюдение сроков</p>
         </div>
         <div>
           <p>50<sup>%</sup></p>
-          <h5>Минимальная предоплата</h5>
+          <p>Минимальная предоплата</p>
         </div>
       </div>
     </div>
@@ -81,6 +83,25 @@
   <div class="partners_container">
     <section class="partners"> <a href="#"><img src="img/html1.png" alt="Школа html academy"></a> <a href="#"><img src="img/Borodinski.png" alt="Барбершоп Бородинский"></a> <a href="#"><img src="img/pink.png" alt="Розовые очки"></a> <a href="#"><img src="img/mishka.png" alt=""></a> </section>
   </div>
-</div>
+</main>
+<!--    footer ты не увидел, потомучто он еще не был размечен, что я и исправляю ниже-->
+<footer>
+  <section class="map"> <span>NЁRDS DESIGN STUDIO</span>
+    <p>191186, Санкт-Петербург, 
+      ул. Б. Конюшенная, д. 19/8 <br>
+      <br>
+      тел. +7 (812) 275-75-75</p>
+    <input type="button" name="WriteUs" value="Напишите нам">
+  </section>
+  <section class="Contacts">
+    <ul class="socialNetwork">
+      <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте"></a></li>
+      <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook"></a></li>
+      <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram"></a></li>
+    </ul>
+    <span>Давайте дружить, это выгодно!</span>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </section>
+</footer>
 </body>
 </html>
