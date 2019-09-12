@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Каталог</title>
+</head>
+<body>
+<div class="container">
+  <header class="container_part1">
+    <nav class="menu_header__part1"> 
+      <!--
+        <h1>Каталог Nerds - design sttudio</h1>
+        <h2>Навигация</h2> будет скрыто через visually hidden
+--> 
+      <a class="logotype" href=""><img src="img/nerds-logo.png" alt="Nerds" width="160px" height="65"></a>
+      <ul>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
+  </header>
+</div>
+<main class="main__catalog">
+  <p>Магазин готовых шаблонов</p>
+  <div class="container"> 
+    <!--        оставляю контейнер для разметки на flex-ах-->
+    <section class="filtr"> 
+      <!--        <h2>Фильтр</h2>будет скрыто через visually hidden-->
+      <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
+        <p>СЕТКИ</p>
+        <ul class="variantsNetwork">
+          <li>
+            <input type="radio" id="Adaptive" name="Network" checked>
+            <label for="Adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" id="Fix" name="Network">
+            <label for="Fix">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" id="Rubber" name="Network">
+            <label for="Rubber">Резиновая</label>
+          </li>
+        </ul>
+        <p>ОСОБЕННОСТИ:</p>
+        <ul class="PROPERTY">
+          <li>
+            <label>
+              <input type="checkbox" name="Slider" checked>
+              Слайдер </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Property">
+              Блок преимуществ </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="News" checked>
+              Новости </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Galary">
+              Галерея </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Basket">
+              Корзина </label>
+          </li>
+        </ul>
+        <input type="submit" value="ПОКАЗАТЬ">
+      </form>
+    </section>
+    <section class="product"> <a href="#"><img src="img/img-sedona.jpg.png" alt="Проект Седонна" width="360px" height="576px"></a> <a href="#"><img src="img/img-pink.jpg.png" alt="Проект Пинк" width="360px" height="576px"></a> <a href="#"><img src="img/img-barbershop.jpg.png" alt="Проект Барбершоп" width="360px" height="576px"></a> <a href="#"><img src="img/img-mishka.jpg.png" alt="Проект Мишка" width="360px" height="576px"></a> <a href="#"><img src="img/img-aplus.jpg.png" alt="Проект Эплас" width="360px" height="576px"></a> <a href="#"><img src="img/img-kvast.jpg.png" alt="Проект Квас" width="360px" height="576px"></a> </section>
+  </div>
+</main>
+<footer>
+  <section class="map"> 
+    <!--      <h2>Контакты</h2>будет скрыто через visually hidden-->
+    <h3>NЁRDS DESIGN STUDIO</h3>
+    <addres> 191186, Санкт-Петербург, 
+      ул. Б. Конюшенная, д. 19/8 </addres>
+    <p> тел. +7 (812) 275-75-75 </p>
+    <input type="button" name="WriteUs" value="Напишите нам">
+  </section>
+  <section class="Contacts">
+    <ul class="socialNetwork">
+      <!--      Мы же можем ull сделать блочным?-->
+      <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте"></a></li>
+      <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook"></a></li>
+      <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram"></a></li>
+    </ul>
+    <div class="sale"> <span>Давайте дружить, это выгодно!</span>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </section>
+</footer>
+</body>
+</html>
