@@ -8,49 +8,50 @@
 </head>
 
 <body>
-<div class="container"> <!--Не совсем понятно замечание про обилие контейнерами. У меня каждый контенер выполняет свою функцию, например, этот контейнер отвечает за фоновый цвет, как бы мы не меняли масштаб страницы фоновый цвет останется. На каждй раздел сайта, header, main, footer я делаю свой контейнер. На мой взгляд это делает их независимыми. Если нужно будет переделать в будущем сетку только hedera, все не полетит в тар тарары)) Прислушиваясь к твоим рекомендациям я постарался сократить кол-во оберток, ну или как минимум отдал их функцию другим элементам 
-По поводу заголовков, я от них полностью откажусь. Один единственный заголовок h1 я сделаю видимым ТООЛЬКО для ридера-->
-  <header class="container_part1"> 
-    <!--   Эти контейнером определяется центрирование контента, устанавливается ширина-->
-    <section class="header"> <a class="logotype" href=""><img src="img/nerds-logo.png" alt="Nerds"></a> 
-      <!--Замечание устранил, ошибку понял-->
-      <nav class="menu_header__part1">
-        <ul>
-          <li><a href="#">Студия</a> </li>
-          <li><a href="#">Клиенты</a> </li>
-          <li><a href="#">Магазин</a> </li>
-          <li><a href="#">Контакты</a> </li>
-        </ul>
-      </nav>
-      <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </section>
+<div class="container">
+  <header class="container_part1">
+    <nav class="menu_header__part1"> 
+      <!--
+        <h1>Nerds - design sttudio</h1>
+        <h2>Навинация</h2> будет скрыто через visually hidden
+-->
+      <ul>
+        <li><a class="logotype" href=""><img src="img/nerds-logo.png" alt="Nerds"></a></li>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="basket"><span class="basket__text"> Корзина </span></a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<main>
+  <div class="containerSlider__main">
     <section class="promo_slids">
       <div class="promo">
         <p class="title_promo">Долго, дорого, скрупулезно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="all_slide">Узнать больше</a>
-      </div>
-      <img src="img/slide1.png" alt="3 телефона"> </section>
-    <img src="img/slide2.png" alt="2 компьютера"> <img src="img/slide3.png" alt="2 планщета"> </header>
-</div>
-<main>
-  <section class="product">
+        <a href="#" class="all_slide">Узнать больше</a> </div>
+      <img src="img/slide1.png" alt="3 телефона"> <img src="img/slide2.png" alt="2 компьютера"> <img src="img/slide3.png" alt="2 планщета"> </section>
+  </div>
+  <section class="product"> 
+    <!--      <h2>Что мы умеем</h2> будет скрыто через visually hidden-->
     <div class="product_cart"> <img src="img/illustration-1.png" alt="Изображение к карточке веб-сайты">
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-      <a href="#" class="order_1">ЗАКАЗАТЬ</a>
-    </div>
+      <a href="#" class="order_1">ЗАКАЗАТЬ</a> </div>
     <div class="product_cart"> <img src="img/illustration-2.png" alt="Изображение к карточке приложения">
       <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-      <a href="#" class="order_2">ЗАКАЗАТЬ</a>
-    </div>
+      <a href="#" class="order_2">ЗАКАЗАТЬ</a> </div>
     <div class="product_cart"> <img src="img/illustration-3.png" alt="Изображение к карточке Презентации">
       <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
-      <a href="#" class="order_3">ЗАКАЗАТЬ</a>
-    </div>
+      <a href="#" class="order_3">ЗАКАЗАТЬ</a> </div>
   </section>
-  <section class="aboutMe">
+  <section class="aboutMe"> 
+    <!--      <h2>Напишите нам</h2> будет скрыто через visually hidden-->
     <div class="aboutMe__text">
       <p class="aboutMe__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -64,8 +65,7 @@
     </div>
     <div class="aboutMe__percent"> <img src="img/nerds-illustration.png" alt="Илюстрация логотипа Nerds"> <span>с 2004 года Любим точность во всем:</span>
       <div class="persent_container">
-        <div> 
-          <!--            Эти контейнеры я использую построения сетки на flex-ах-->
+        <div>
           <p>146<sup>%</sup></p>
           <p>Уровень самоотдачи</p>
         </div>
@@ -84,23 +84,25 @@
     <section class="partners"> <a href="#"><img src="img/html1.png" alt="Школа html academy"></a> <a href="#"><img src="img/Borodinski.png" alt="Барбершоп Бородинский"></a> <a href="#"><img src="img/pink.png" alt="Розовые очки"></a> <a href="#"><img src="img/mishka.png" alt=""></a> </section>
   </div>
 </main>
-<!--    footer ты не увидел, потомучто он еще не был размечен, что я и исправляю ниже-->
 <footer>
-  <section class="map"> <span>NЁRDS DESIGN STUDIO</span>
-    <p>191186, Санкт-Петербург, 
-      ул. Б. Конюшенная, д. 19/8 <br>
-      <br>
-      тел. +7 (812) 275-75-75</p>
+  <section class="map"> 
+    <!--      <h2>Контакты</h2>будет скрыто через visually hidden-->
+    <h3>NЁRDS DESIGN STUDIO</h3>
+    <addres> 191186, Санкт-Петербург, 
+      ул. Б. Конюшенная, д. 19/8 </addres>
+    <p> тел. +7 (812) 275-75-75 </p>
     <input type="button" name="WriteUs" value="Напишите нам">
   </section>
   <section class="Contacts">
     <ul class="socialNetwork">
+      <!--      Мы же можем ull сделать блочным?-->
       <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте"></a></li>
       <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook"></a></li>
       <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram"></a></li>
     </ul>
-    <span>Давайте дружить, это выгодно!</span>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <div class="sale"> <span>Давайте дружить, это выгодно!</span>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </section>
 </footer>
 </body>
