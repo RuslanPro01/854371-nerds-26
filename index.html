@@ -37,15 +37,15 @@
   </div>
   <section class="product"> 
     <!--      <h2>Что мы умеем</h2> будет скрыто через visually hidden-->
-    <div class="product_cart"> <img src="img/illustration-1.png" alt="Изображение к карточке веб-сайты">
+    <div class="product_cart"> <img src="img/illustration-1.png" alt="Изображение к карточке веб-сайты" width="300px" height="146px">
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       <a href="#" class="order_1">ЗАКАЗАТЬ</a> </div>
-    <div class="product_cart"> <img src="img/illustration-2.png" alt="Изображение к карточке приложения">
+    <div class="product_cart"> <img src="img/illustration-2.png" alt="Изображение к карточке приложения" width="300px" height="146px">
       <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       <a href="#" class="order_2">ЗАКАЗАТЬ</a> </div>
-    <div class="product_cart"> <img src="img/illustration-3.png" alt="Изображение к карточке Презентации">
+    <div class="product_cart"> <img src="img/illustration-3.png" alt="Изображение к карточке Презентации" width="300px" height="146px">
       <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
       <a href="#" class="order_3">ЗАКАЗАТЬ</a> </div>
@@ -81,7 +81,12 @@
     </div>
   </section>
   <div class="partners_container">
-    <section class="partners"> <a href="#"><img src="img/html1.png" alt="Школа html academy"></a> <a href="#"><img src="img/Borodinski.png" alt="Барбершоп Бородинский"></a> <a href="#"><img src="img/pink.png" alt="Розовые очки"></a> <a href="#"><img src="img/mishka.png" alt=""></a> </section>
+    <ul class="partners">
+        <li><a href="№"><img src="img/logo-1.png_copy.png" alt="Партнер HTML academy" width="199px" height="68px"></a></li>
+        <li><a href="№"><img src="img/logo-2.png_copy.png" alt="Партнер барбершоп"  width="289px" height="90"></a></li>
+        <li><a href="№"><img src="img/logo-3.png_copy.png" alt="Партнер Пинк" width="185px" height="58px"></a></li>
+        <li><a href="№"><img src="img/logo-4.png_copy.png" alt="Магазин Мишка" width="173px" height="84px"></a></li>
+    </ul>
   </div>
 </main>
 <footer>
@@ -90,29 +95,35 @@
     <h3>NЁRDS DESIGN STUDIO</h3>
     <addres> 191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </addres>
-    <p> тел. +7 (812) 275-75-75 </p>
+    <tel> тел. +7 (812) 275-75-75 </tel>
     <input type="button" name="WriteUs" value="Напишите нам">
   </section>
   <section class="Contacts">
     <ul class="socialNetwork">
-      <!--      Мы же можем ull сделать блочным?-->
-      <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте"></a></li>
-      <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook"></a></li>
-      <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram"></a></li>
+      <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте" width="21px" height="21px"></a></li>
+      <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook" width="21px" height="21px"></a></li>
+      <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram" width="21px" height="21px"></a></li>
     </ul>
     <div class="sale"> <span>Давайте дружить, это выгодно!</span>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </section>
 </footer>
-    <section class="popUp">
-    <h2></h2>
-    <form action="https://echo.htmlacademy.ru" name="PopUp">
-        <label>Ваше имя: <input type="text" placeholder="Ваше Имя" name="FLName"></label>
-        <label>Ваш e-mail: <input type="email" placeholder="email@example.com" name="eMail"></label>
-        <label>Текст письма: <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea></label>
-        <input type="submit" value="ОТПРАВИТЬ">
-        </form>
-    </section>
+<section class="popUp">
+  <h2></h2>
+  <form action="https://echo.htmlacademy.ru" name="PopUp">
+    <label>Ваше имя:
+      <input type="text" placeholder="Ваше Имя" name="FLName">
+    </label>
+    <label>Ваш e-mail:
+      <input type="email" placeholder="email@example.com" name="eMail">
+    </label>
+    <label>Текст письма:
+      <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea>
+    </label>
+    <button type="submit">ОТПРАВИТЬ</button>
+      <button type="button"><img src="img/close-PopUp.png" alt="Конопка закрытия формы" width="21px" height="21px"></button> 
+  </form>
+</section>
 </body>
 </html>
