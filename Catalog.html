@@ -12,9 +12,9 @@
         <h1>Каталог Nerds - design sttudio</h1>
         <h2>Навигация</h2> будет скрыто через visually hidden
 --> 
-      <a class="logotype" href=""><img src="img/nerds-logo.png" alt="Nerds" width="160px" height="65"></a>
+      <a class="logotype" href=""><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160px" height="65"></a>
       <ul>
-        <li><a href="#">Студия</a></li>
+        <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
@@ -29,81 +29,88 @@
     <section class="filtr"> 
       <!--        <h2>Фильтр</h2>будет скрыто через visually hidden-->
       <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
-        <p>СЕТКИ</p>
-        <ul class="variantsNetwork">
-          <li>
-            <input type="radio" id="Adaptive" name="Network" checked>
-            <label for="Adaptive">Адаптивная</label>
-          </li>
-          <li>
-            <input type="radio" id="Fix" name="Network">
-            <label for="Fix">Фиксированная</label>
-          </li>
-          <li>
-            <input type="radio" id="Rubber" name="Network">
-            <label for="Rubber">Резиновая</label>
-          </li>
-        </ul>
-        <p>ОСОБЕННОСТИ:</p>
-        <ul class="PROPERTY">
-          <li>
-            <label>
-              <input type="checkbox" name="Slider" checked>
-              Слайдер </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" name="Property">
-              Блок преимуществ </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" name="News" checked>
-              Новости </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" name="Galary">
-              Галерея </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" name="Basket">
-              Корзина </label>
-          </li>
-        </ul>
-        <input type="submit" value="ПОКАЗАТЬ">
+        <fieldset class="variantsNetwork">
+          <legend>СЕТКИ</legend>
+          <input type="radio" id="Adaptive" name="Network" checked>
+          <label for="Adaptive">Адаптивная</label>
+          <input type="radio" id="Fix" name="Network">
+          <label for="Fix">Фиксированная</label>
+          <input type="radio" id="Rubber" name="Network">
+          <label for="Rubber">Резиновая</label>
+        </fieldset>
+        <fieldset class="PROPERTY">
+          <legend>ОСОБЕННОСТИ:</legend>
+          <label>
+            <input type="checkbox" name="Slider" checked>
+            Слайдер </label>
+          <label>
+            <input type="checkbox" name="Property">
+            Блок преимуществ </label>
+          <label>
+            <input type="checkbox" name="News" checked>
+            Новости </label>
+          <label>
+            <input type="checkbox" name="Galary">
+            Галерея </label>
+          <label>
+            <input type="checkbox" name="Basket">
+            Корзина </label>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section class="product"> 
-        <a href="#"><img src="img/img-sedona.jpg.png" alt="Проект Седонна" width="360px" height="576px"></a> 
-        <a href="#"><img src="img/img-pink.jpg.png" alt="Проект Пинк" width="360px" height="576px"></a> 
-        <a href="#"><img src="img/img-barbershop.jpg.png" alt="Проект Барбершоп" width="360px" height="576px"></a> 
-        <a href="#"><img src="img/img-mishka.jpg.png" alt="Проект Мишка" width="360px" height="576px"></a> 
-        <a href="#"><img src="img/img-aplus.jpg.png" alt="Проект Эплас" width="360px" height="576px"></a> 
-        <a href="#"><img src="img/img-kvast.jpg.png" alt="Проект Квас" width="360px" height="576px"></a> </section>
+      <!--        <h2>Что мы умеем</h2>будет скрыто через visually hidden-->
+      <article><p class="title__product">SEDONA</p>
+      <p>Информационный сайт для туристов</p><a href="#">9 900 руб.</a></article>
+      <article><p class="title__product">PINK APP</p>
+      <p>Продуктовый лендинг приложения для iOS и Android</p><a href="#">9 900 руб.</a></article>
+      <article><p class="title__product">BARBERSHOP</p>
+      <p>Сайт салона красоты. Для мужчин, да.</p><a href="#">9 900 руб.</a></article>
+      <article><p class="title__product">MISHKA</p>
+      <p>Интернет-магазин вязаных игрушек</p><a href="#">9 900 руб.</a></article>
+      <article><p class="title__product">A PLUS</p>
+      <p>Лендинг курсов повышения квалификации</p><a href="#">9 900 руб.</a></article>
+      <article><p class="title__product">КВАСТ</p>
+      <p>Промо-сайт производителя крафтового кваса</p><a href="#">9 900 руб.</a></article>
+    </section>
   </div>
 </main>
 <footer>
   <section class="map"> 
     <!--      <h2>Контакты</h2>будет скрыто через visually hidden-->
-    <h3>NЁRDS DESIGN STUDIO</h3>
+    <p>NЁRDS DESIGN STUDIO</p>
     <addres> 191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </addres>
-    <p> тел. +7 (812) 275-75-75 </p>
-    <input type="button" name="WriteUs" value="Напишите нам">
+    <tel> тел. +7 (812) 275-75-75 </tel>
+    <button class="WriteUs" type="button">Напишите нам</button>
   </section>
   <section class="Contacts">
     <ul class="socialNetwork">
-      <!--      Мы же можем ull сделать блочным?-->
-      <li><a href="#"><img src="img/vk-icon.png" alt="Мы ВКонтакте"></a></li>
-      <li><a href="#"><img src="img/fb-icon.png" alt="Мы в Facebook"></a></li>
-      <li><a href="#"><img src="img/insta-icon.png" alt="Мы в Instagram"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
     </ul>
     <div class="sale"> <span>Давайте дружить, это выгодно!</span>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </section>
 </footer>
+<section class="popUp">
+  <h2></h2>
+  <form action="https://echo.htmlacademy.ru" name="PopUp">
+    <label>Ваше имя:
+      <input type="text" placeholder="Ваше Имя" name="FLName">
+    </label>
+    <label>Ваш e-mail:
+      <input type="email" placeholder="email@example.com" name="eMail">
+    </label>
+    <label>Текст письма:
+      <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea>
+    </label>
+    <button type="submit">ОТПРАВИТЬ</button>
+    <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21px" height="21px">
+  </form>
+</section>
 </body>
 </html>
