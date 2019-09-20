@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <title>Главная</title>
@@ -10,13 +10,10 @@
 <body>
 <div class="container">
   <header class="container_part1">
-    <nav class="menu_header__part1"> 
-      <!--
-        
-        <h2>Навинация</h2> будет скрыто через visually hidden
---> 
-      
-      <a class="logotype" href=""><img src="img/nerds-logo.svg" alt="Nerds" width="160px" height="65"></a>
+    <nav class="menu_header__part1">
+      <h2>Навинация</h2>
+      <!--  будет скрыто через visually hidden--> 
+      <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <ul>
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -26,12 +23,13 @@
       <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
   </header>
 </div>
-<main>
-<!--    <h1>Nerds - design sttudio</h1> будет скрыто через visually hidden-->
+<main> 
   <div class="containerSlider__main">
     <section class="promo_slids">
       <div class="promo">
         <ul class="title_promo">
+             <h1>Nerds - design sttudio</h1> 
+ <!--будет скрыто через visually hidden-->
           <li>Долго, дорого, скрупулезно.</li>
           <li>Любим математику как никто другой</li>
           <li>Только ночь, только хардкор</li>
@@ -41,22 +39,22 @@
       <img src="img/slide1.png" alt="3 телефона"> <img src="img/slide2.png" alt="2 компьютера"> <img src="img/slide3.png" alt="2 планщета"> </section>
   </div>
   <section class="product"> 
-    <!--      <h2>Что мы умеем</h2> будет скрыто через visually hidden-->
-    <div class="product_cart"> 
+   <h2>Что мы умеем</h2>  <!--будет скрыто через visually hidden-->
+    <div class="product_cart">
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       <a href="#" class="order_1">ЗАКАЗАТЬ</a> </div>
-    <div class="product_cart"> 
+    <div class="product_cart">
       <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       <a href="#" class="order_2">ЗАКАЗАТЬ</a> </div>
-    <div class="product_cart"> 
+    <div class="product_cart">
       <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
       <a href="#" class="order_3">ЗАКАЗАТЬ</a> </div>
   </section>
   <section class="aboutMe"> 
-    <!--      <h2>О компании</h2> будет скрыто через visually hidden-->
+    <h2>О компании</h2>  <!--будет скрыто через visually hidden-->
     <div class="aboutMe__text">
       <p class="aboutMe__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -87,16 +85,16 @@
   </section>
   <div class="partners_container">
     <ul class="partners">
-      <li><a href="#"><img src="img/logo-1.png_copy.png" alt="Партнер HTML academy" width="199px" height="68px"></a></li>
-      <li><a href="#"><img src="img/logo-2.png_copy.png" alt="Партнер барбершоп"  width="289px" height="90"></a></li>
-      <li><a href="#"><img src="img/logo-3.png_copy.png" alt="Партнер Пинк" width="185px" height="58px"></a></li>
-      <li><a href="#"><img src="img/logo-4.png_copy.png" alt="Магазин Мишка" width="173px" height="84px"></a></li>
+      <li><a href="#"><img src="img/logo-1.png_copy.png" alt="Партнер HTML academy" width="199" height="68"></a></li>
+      <li><a href="#"><img src="img/logo-2.png_copy.png" alt="Партнер барбершоп"  width="289" height="90"></a></li>
+      <li><a href="#"><img src="img/logo-3.png_copy.png" alt="Партнер Пинк" width="185" height="58"></a></li>
+      <li><a href="#"><img src="img/logo-4.png_copy.png" alt="Магазин Мишка" width="173" height="84"></a></li>
     </ul>
   </div>
 </main>
 <footer>
   <section class="map"> 
-    <!--      <h2>Контакты</h2>будет скрыто через visually hidden-->
+    <h2>Контакты</h2><!--      будет скрыто через visually hidden-->
     <p>NЁRDS DESIGN STUDIO</p>
     <addres> 191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </addres>
@@ -104,6 +102,7 @@
     <button class="WriteUs" type="button">Напишите нам</button>
   </section>
   <section class="Contacts">
+      <h2>Социальные сети</h2><!--      будет скрыто через visually hidden-->
     <ul class="socialNetwork">
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
@@ -115,7 +114,7 @@
   </section>
 </footer>
 <section class="popUp">
-  <h2></h2>
+  <h2>Форма связи</h2>
   <form action="https://echo.htmlacademy.ru" name="PopUp">
     <label>Ваше имя:
       <input type="text" placeholder="Ваше Имя" name="FLName">
@@ -127,7 +126,7 @@
       <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea>
     </label>
     <button type="submit">ОТПРАВИТЬ</button>
-    <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21px" height="21px">
+    <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
   </form>
 </section>
 </body>

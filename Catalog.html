@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <title>Каталог</title>
@@ -12,7 +12,7 @@
         <h1>Каталог Nerds - design sttudio</h1>
         <h2>Навигация</h2> будет скрыто через visually hidden
 --> 
-      <a class="logotype" href=""><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160px" height="65"></a>
+      <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160" height="65"></a>
       <ul>
         <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -26,8 +26,9 @@
   <p>Магазин готовых шаблонов</p>
   <div class="container"> 
     <!--        оставляю контейнер для разметки на flex-ах-->
-    <section class="filtr"> 
-      <!--        <h2>Фильтр</h2>будет скрыто через visually hidden-->
+    <section class="filtr">
+      <h2>Фильтр</h2>
+      <!--        будет скрыто через visually hidden-->
       <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
         <fieldset class="variantsNetwork">
           <legend>СЕТКИ</legend>
@@ -59,33 +60,48 @@
         <button type="submit">Показать</button>
       </form>
     </section>
-    <section class="product"> 
-      <!--        <h2>Что мы умеем</h2>будет скрыто через visually hidden-->
-      <article><p class="title__product">SEDONA</p>
-      <p>Информационный сайт для туристов</p><a href="#">9 900 руб.</a></article>
-      <article><p class="title__product">PINK APP</p>
-      <p>Продуктовый лендинг приложения для iOS и Android</p><a href="#">9 900 руб.</a></article>
-      <article><p class="title__product">BARBERSHOP</p>
-      <p>Сайт салона красоты. Для мужчин, да.</p><a href="#">9 900 руб.</a></article>
-      <article><p class="title__product">MISHKA</p>
-      <p>Интернет-магазин вязаных игрушек</p><a href="#">9 900 руб.</a></article>
-      <article><p class="title__product">A PLUS</p>
-      <p>Лендинг курсов повышения квалификации</p><a href="#">9 900 руб.</a></article>
-      <article><p class="title__product">КВАСТ</p>
-      <p>Промо-сайт производителя крафтового кваса</p><a href="#">9 900 руб.</a></article>
+    <section class="product">
+      <h2>Что мы умеем</h2>
+      <!--        будет скрыто через visually hidden-->
+      <div>
+        <p class="title__product">SEDONA</p>
+        <p>Информационный сайт для туристов</p>
+        <a href="#">9 900 руб.</a></div>
+      <div>
+        <p class="title__product">PINK APP</p>
+        <p>Продуктовый лендинг приложения для iOS и Android</p>
+        <a href="#">9 900 руб.</a></div>
+      <div>
+        <p class="title__product">BARBERSHOP</p>
+        <p>Сайт салона красоты. Для мужчин, да.</p>
+        <a href="#">9 900 руб.</a></div>
+      <div>
+        <p class="title__product">MISHKA</p>
+        <p>Интернет-магазин вязаных игрушек</p>
+        <a href="#">9 900 руб.</a></div>
+      <div>
+        <p class="title__product">A PLUS</p>
+        <p>Лендинг курсов повышения квалификации</p>
+        <a href="#">9 900 руб.</a></div>
+      <div>
+        <p class="title__product">КВАСТ</p>
+        <p>Промо-сайт производителя крафтового кваса</p>
+        <a href="#">9 900 руб.</a></div>
     </section>
   </div>
 </main>
 <footer>
-  <section class="map"> 
-    <!--      <h2>Контакты</h2>будет скрыто через visually hidden-->
+  <section class="map">
+    <h2>Контакты</h2>
+    <!--      будет скрыто через visually hidden-->
     <p>NЁRDS DESIGN STUDIO</p>
-    <addres> 191186, Санкт-Петербург, 
-      ул. Б. Конюшенная, д. 19/8 </addres>
+    <addres> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </addres>
     <tel> тел. +7 (812) 275-75-75 </tel>
     <button class="WriteUs" type="button">Напишите нам</button>
   </section>
   <section class="Contacts">
+    <h2>Связаться с нами</h2>
+    <!--      будет скрыто через visually hidden-->
     <ul class="socialNetwork">
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
@@ -97,7 +113,8 @@
   </section>
 </footer>
 <section class="popUp">
-  <h2></h2>
+  <h2>Форма связи</h2>
+  <!--      будет скрыто через visually hidden-->
   <form action="https://echo.htmlacademy.ru" name="PopUp">
     <label>Ваше имя:
       <input type="text" placeholder="Ваше Имя" name="FLName">
@@ -109,7 +126,7 @@
       <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea>
     </label>
     <button type="submit">ОТПРАВИТЬ</button>
-    <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21px" height="21px">
+    <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
   </form>
 </section>
 </body>
