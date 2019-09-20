@@ -11,7 +11,7 @@
 <div class="container">
   <header class="container_part1">
     <nav class="menu_header__part1">
-      <h2>Навинация</h2>
+      <h2 class="visually-hidden">Навинация</h2>
       <!--  будет скрыто через visually hidden--> 
       <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <ul>
@@ -23,23 +23,40 @@
       <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
   </header>
 </div>
-<main> 
+<main>
   <div class="containerSlider__main">
     <section class="promo_slids">
+      <h1 class="visually-hidden">Nerds - design sttudio</h1>
+      <!--будет скрыто через visually hidden-->
       <div class="promo">
         <ul class="title_promo">
-             <h1>Nerds - design sttudio</h1> 
- <!--будет скрыто через visually hidden-->
-          <li>Долго, дорого, скрупулезно.</li>
-          <li>Любим математику как никто другой</li>
-          <li>Только ночь, только хардкор</li>
+          <li>
+            <p><span>Долго, дорого, скрупулезно.</span></p>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#">Узнать больше</a></li>
+          <li>
+            <p><span>Любим математику как никто другой</span></p>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#">Узнать больше</a></li>
+          <li>
+            <p><span>Только ночь, только хардкор</span></p>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#">Узнать больше</a></li>
         </ul>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="all_slide">Узнать больше</a> </div>
-      <img src="img/slide1.png" alt="3 телефона"> <img src="img/slide2.png" alt="2 компьютера"> <img src="img/slide3.png" alt="2 планщета"> </section>
+      </div>
+      <div class="radioNav">
+        <input type="radio" id="sliderBtn1" name="NavSlider" checked>
+        <input type="radio" id="sliderBtn2" name="NavSlider">
+        <input type="radio" id="sliderBtn3" name="NavSlider">
+        <label for="sliderBtn1"></label>
+        <label for="sliderBtn2"></label>
+        <label for="sliderBtn3"></label>
+      </div>
+    </section>
   </div>
-  <section class="product"> 
-   <h2>Что мы умеем</h2>  <!--будет скрыто через visually hidden-->
+  <section class="product">
+    <h2 class="visually-hidden">Что мы умеем</h2>
+    <!--будет скрыто через visually hidden-->
     <div class="product_cart">
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -53,8 +70,9 @@
       <p>Вы даже не подозреваете, вы изумительны!</p>
       <a href="#" class="order_3">ЗАКАЗАТЬ</a> </div>
   </section>
-  <section class="aboutMe"> 
-    <h2>О компании</h2>  <!--будет скрыто через visually hidden-->
+  <section class="aboutMe">
+    <h2 class="visually-hidden">О компании</h2>
+    <!--будет скрыто через visually hidden-->
     <div class="aboutMe__text">
       <p class="aboutMe__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -93,8 +111,9 @@
   </div>
 </main>
 <footer>
-  <section class="map"> 
-    <h2>Контакты</h2><!--      будет скрыто через visually hidden-->
+  <section class="map">
+    <h2 class="visually-hidden">Контакты</h2>
+    <!--      будет скрыто через visually hidden-->
     <p>NЁRDS DESIGN STUDIO</p>
     <addres> 191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </addres>
@@ -102,7 +121,8 @@
     <button class="WriteUs" type="button">Напишите нам</button>
   </section>
   <section class="Contacts">
-      <h2>Социальные сети</h2><!--      будет скрыто через visually hidden-->
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <!--      будет скрыто через visually hidden-->
     <ul class="socialNetwork">
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
@@ -117,13 +137,13 @@
   <h2>Форма связи</h2>
   <form action="https://echo.htmlacademy.ru" name="PopUp">
     <label>Ваше имя:
-      <input type="text" placeholder="Ваше Имя" name="FLName">
+      <input type="text" placeholder="Ваше Имя" name="FLName" required autofocus>
     </label>
     <label>Ваш e-mail:
-      <input type="email" placeholder="email@example.com" name="eMail">
+      <input type="email" placeholder="email@example.com" name="eMail" required>
     </label>
     <label>Текст письма:
-      <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20"></textarea>
+      <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20" required></textarea>
     </label>
     <button type="submit">ОТПРАВИТЬ</button>
     <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
