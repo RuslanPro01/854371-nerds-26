@@ -7,12 +7,8 @@
 <body>
 <div class="container">
   <header class="container_part1">
-    <nav class="menu_header__part1"> 
-      
-        <h1 class="visually-hidden">Каталог Nerds - design sttudio</h1>
-        <h2 class="visually-hidden">Навигация</h2> <!--будет скрыто через visually hidden
---> 
-      <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160" height="65"></a>
+    <h1 class="visually-hidden">Каталог Nerds - design sttudio</h1>
+    <nav class="menu_header__part1"> <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160" height="65"></a>
       <ul>
         <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -29,6 +25,13 @@
     <section class="filtr">
       <h2 class="visually-hidden">Фильтр</h2>
       <!--        будет скрыто через visually hidden-->
+      <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
+        <fieldset class="variantsNetwork">
+        <legend>СТОИМОСТЬ</legend>
+        <input type="text">
+        <input type="text">
+        </fieldset>   
+      </form>
       <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
         <fieldset class="variantsNetwork">
           <legend>СЕТКИ</legend>
@@ -61,48 +64,38 @@
       </form>
     </section>
     <section class="product">
-        <div class="productSort">
-            <p>СОРТИРОВАТЬ</p>
-            <a href="#">ПО ЦЕНЕ</a>
-            <a href="#">ПО ТИПУ</a>
-            <a href="#">ПО НАЗВАНИЮ</a>
-            <a href="#"><img src="img/icon-up-dir.svg" alt="Вверходящая сортировка" width="11" height="10"></a>
-            <a href="#"><img src="img/icon-down-dir.svg" alt="Низходящая сортировка сортировка" width="11" height="10"></a>
-        </div>
+      <div class="productSort">
+        <p>СОРТИРОВАТЬ</p>
+        <a href="#">ПО ЦЕНЕ</a> <a href="#">ПО ТИПУ</a> <a href="#">ПО НАЗВАНИЮ</a> <a href="#"><img src="img/icon-up-dir.svg" alt="Вверходящая сортировка" width="11" height="10"></a> <a href="#"><img src="img/icon-down-dir.svg" alt="Низходящая сортировка сортировка" width="11" height="10"></a> </div>
       <h2 class="visually-hidden">Что мы умеем</h2>
       <!--        будет скрыто через visually hidden-->
       <div>
         <h3 class="title__product">SEDONA</h3>
-        <img src="img/img-sedona.jpg.jpg" alt="Проект Sedona" width="360" height="576">
+        <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
         <p>Информационный сайт для туристов</p>
         <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-pink.jpg.jpg" alt="Проект Pink" width="360" height="576">
+      <div> <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
         <h3 class="title__product">PINK APP</h3>
         <p>Продуктовый лендинг приложения для iOS и Android</p>
         <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-barbershop.jpg.jpg" alt="Проект Barbershop" width="360" height="576">
+      <div> <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
         <h3 class="title__product">BARBERSHOP</h3>
         <p>Сайт салона красоты. Для мужчин, да.</p>
         <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-mishka.jpg.jpg" alt="Проект Mishka" width="360" height="576">
+      <div> <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
         <h3 class="title__product">MISHKA</h3>
         <p>Интернет-магазин вязаных игрушек</p>
         <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-aplus.jpg.jpg" alt="Проект A-Plus" width="360" height="576">
+      <div> <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
         <p class="title__product">A PLUS</p>
         <h3>Лендинг курсов повышения квалификации</h3>
         <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-kvast.jpg.jpg" alt="Проект Sedona" width="360" height="576">
+      <div> <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
         <h3 class="title__product">КВАСТ</h3>
         <p>Промо-сайт производителя крафтового кваса</p>
         <a href="#">9 900 руб.</a></div>
     </section>
-      <div class="pages">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">СЛЕДУЮЩАЯ</a>
-      </div>
+    <div class="pages"> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">СЛЕДУЮЩАЯ</a> </div>
   </div>
 </main>
 <footer>
@@ -110,7 +103,9 @@
     <h2 class="visually-hidden">Контакты</h2>
     <!--      будет скрыто через visually hidden-->
     <p>NЁRDS DESIGN STUDIO</p>
-    <address> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </address>
+    <address>
+    191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </address>
     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
     <button class="WriteUs" type="button">Напишите нам</button>
   </section>
