@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Каталог</title>
+<link rel="stylesheet" href="css/Normalize.css">
 </head>
 <body>
 <div class="container">
@@ -27,12 +28,10 @@
       <!--        будет скрыто через visually hidden-->
       <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
         <fieldset class="variantsNetwork">
-        <legend>СТОИМОСТЬ</legend>
-        <input type="text">
-        <input type="text">
-        </fieldset>   
-      </form>
-      <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
+          <legend>СТОИМОСТЬ</legend>
+          <input type="text" name="minCost" placeholder="ОТ">
+          <input type="text" name="maxCost" placeholder="ДО">
+        </fieldset>
         <fieldset class="variantsNetwork">
           <legend>СЕТКИ</legend>
           <input type="radio" id="Adaptive" name="Network" checked>

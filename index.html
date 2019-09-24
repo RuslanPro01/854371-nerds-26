@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <title>Главная</title>
 <link rel="stylesheet" href="css/Normalize.css">
+<link rel="stylesheet" href="css/Style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 <div class="container">
   <header class="container_part1">
-    <nav class="menu_header__part1">
+    <nav class="menuHeader__part1">
       <h2 class="visually-hidden">Навинация</h2>
-      <!--  будет скрыто через visually hidden--> 
       <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="Catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Студия</a> </li>
+        <li><a href="#">Клиенты</a> </li>
+        <li><a href="Catalog.html">Магазин</a> </li>
+        <li><a href="#">Контакты</a> </li>
       </ul>
       <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
   </header>
@@ -31,17 +31,17 @@
       <div class="promo">
         <ul class="title_promo">
           <li>
-            <p><span>Долго, дорого, скрупулезно.</span></p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#">Узнать больше</a></li>
-          <li>
-            <p><span>Любим математику как никто другой</span></p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a href="#">Узнать больше</a></li>
-          <li>
-            <p><span>Только ночь, только хардкор</span></p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a></li>
+            <p><span class="title">Долго, дорого, скрупулезно.</span></p>
+            <p class="titlePromoText">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="titlePromoLink"><span>Узнать больше</span></a></li>
+          <li class="displayNone">
+            <p><span class="title">Любим математику как никто другой</span></p>
+            <p class="titlePromoText">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#" class="titlePromoLink"><span>Узнать больше</span></a></li>
+          <li class="displayNone">
+            <p><span class="title">Только ночь, только хардкор</span></p>
+            <p class="titlePromoText">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#" class="titlePromoLink"><span>Узнать больше</span></a></li>
         </ul>
       </div>
       <div class="radioNav">
@@ -60,23 +60,22 @@
     <div class="product_cart">
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-      <a href="#" class="order_1">ЗАКАЗАТЬ</a> </div>
+      <a href="#" class="order_1"><span>ЗАКАЗАТЬ</span></a> </div>
     <div class="product_cart">
       <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-      <a href="#" class="order_2">ЗАКАЗАТЬ</a> </div>
+      <a href="#" class="order_2"><span>ЗАКАЗАТЬ</span></a> </div>
     <div class="product_cart">
       <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
-      <a href="#" class="order_3">ЗАКАЗАТЬ</a> </div>
+      <a href="#" class="order_3"><span>ЗАКАЗАТЬ</span></a> </div>
   </section>
   <section class="aboutMe">
     <h2 class="visually-hidden">О компании</h2>
     <!--будет скрыто через visually hidden-->
     <div class="aboutMe__text">
       <p class="aboutMe__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-        превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
       <span class="ulTitle">Выполняем заказы на разработку:</span>
       <ul>
         <li>Веб-сайтов любой сложности</li>
@@ -87,15 +86,15 @@
     <div class="aboutMe__percent"> <img src="img/nerds-illustration.png" alt="Илюстрация логотипа Nerds" width="360" height="208"> <span>с 2004 года Любим точность во всем:</span>
       <div class="persent_container">
         <div>
-          <p>146<sup>%</sup></p>
+          <p>146<sup>%</sup> </p>
           <p>Уровень самоотдачи</p>
         </div>
         <div>
-          <p>100<sup>%</sup></p>
+          <p>100<sup>%</sup> </p>
           <p>Соблюдение сроков</p>
         </div>
         <div>
-          <p>50<sup>%</sup></p>
+          <p>50<sup>%</sup> </p>
           <p>Минимальная предоплата</p>
         </div>
       </div>
@@ -103,10 +102,10 @@
   </section>
   <div class="partners_container">
     <ul class="partners">
-      <li><a href="#"><img src="img/logo-1.png_copy.png" alt="Партнер HTML academy" width="199" height="68"></a></li>
-      <li><a href="#"><img src="img/logo-2.png_copy.png" alt="Партнер барбершоп"  width="289" height="90"></a></li>
-      <li><a href="#"><img src="img/logo-3.png_copy.png" alt="Партнер Пинк" width="185" height="58"></a></li>
-      <li><a href="#"><img src="img/logo-4.png_copy.png" alt="Магазин Мишка" width="173" height="84"></a></li>
+      <li><a href="#"><img src="img/logo-1.png_copy.png" alt="Партнер HTML academy" width="199" height="68"></a> </li>
+      <li><a href="#"><img src="img/logo-2.png_copy.png" alt="Партнер барбершоп"  width="289" height="90"></a> </li>
+      <li><a href="#"><img src="img/logo-3.png_copy.png" alt="Партнер Пинк" width="185" height="58"></a> </li>
+      <li><a href="#"><img src="img/logo-4.png_copy.png" alt="Магазин Мишка" width="173" height="84"></a> </li>
     </ul>
   </div>
 </main>
@@ -115,7 +114,9 @@
     <h2 class="visually-hidden">Контакты</h2>
     <!--      будет скрыто через visually hidden-->
     <p>NЁRDS DESIGN STUDIO</p>
-    <address> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </address>
+    <address>
+    191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </address>
     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
     <button class="WriteUs" type="button">Напишите нам</button>
   </section>
@@ -123,9 +124,9 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
     <ul class="socialNetwork">
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <li><a href="#"></a> </li>
+      <li><a href="#"></a> </li>
+      <li><a href="#"></a> </li>
     </ul>
     <div class="sale"> <span>Давайте дружить, это выгодно!</span>
       <p>Скидка 10% для друзей из социальных сетей.</p>
