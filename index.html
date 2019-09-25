@@ -110,23 +110,25 @@
   </div>
 </main>
 <footer>
-  <section class="map">
-    <h2 class="visually-hidden">Контакты</h2>
-    <!--      будет скрыто через visually hidden-->
-    <p>NЁRDS DESIGN STUDIO</p>
-    <address>
-    191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    </address>
-    <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-    <button class="WriteUs" type="button">Напишите нам</button>
-  </section>
+  <div class="container__map">
+    <section class="map">
+      <h2 class="visually-hidden">Контакты</h2>
+      <!--      будет скрыто через visually hidden-->
+      <p>NЁRDS DESIGN STUDIO</p>
+      <address>
+      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </address>
+      <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
+      <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+    </section>
+  </div>
   <section class="Contacts">
     <h2 class="visually-hidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
     <ul class="socialNetwork">
-      <li><a href="#"></a> </li>
-      <li><a href="#"></a> </li>
-      <li><a href="#"></a> </li>
+      <li><a href="#"></a>1</li>
+      <li><a href="#"></a>2</li>
+      <li><a href="#"></a>3</li>
     </ul>
     <div class="sale"> <span>Давайте дружить, это выгодно!</span>
       <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -134,7 +136,8 @@
   </section>
 </footer>
 <section class="popUp">
-  <h2>Форма связи</h2>
+  <h2 class="visually-hidden">Форма связи</h2>
+    <p>Напишите нам</p>
   <form action="https://echo.htmlacademy.ru" name="PopUp">
     <label>Ваше имя:
       <input type="text" placeholder="Ваше Имя" name="FLName" required autofocus>
@@ -145,7 +148,7 @@
     <label>Текст письма:
       <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20" required></textarea>
     </label>
-    <button type="submit">ОТПРАВИТЬ</button>
+    <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
     <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
   </form>
 </section>

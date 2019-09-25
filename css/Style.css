@@ -224,3 +224,121 @@ header a {
 .persent_container {
     display: flex;
 }
+.partners_container {
+    margin: 0 auto;
+    width: 1160px;
+}
+.partners {
+    display: flex;
+    justify-content: space-around;
+}
+.partners a {
+    opacity: 0.2;
+}
+.partners a:hover {
+    opacity: 1;
+}
+.partners a:active {
+    opacity: 0.1;
+}
+.map {
+    width: 319px;
+    height: 308px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-left: 140px;
+}
+.container__map {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-top: 54px;
+    width: 1440px;
+    height: 416px;
+}
+.map p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.map address {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+}
+.map a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+}
+.WriteUs {
+    width: 219px;
+    height: 50px;
+    background-color: #fb565a;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.WriteUs:hover {
+    background-color: #e74246;
+}
+.WriteUs:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+.WriteUs:active span {
+    opacity: 0.3
+}
+.Contacts {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socialNetwork {
+    display: flex;
+}
+.sale span {
+    font-size: 36px;
+    font-weight: 700;
+}
+.sale p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.popUp {
+    width: 960px;
+    margin: 0 auto;
+}
+.popUp p {
+    font-size: 45px;
+    font-weight: 500;
+}
+.popUp label {
+    font-size: 16px;
+    font-weight: 700;
+}
+.popUp__Btn {
+    width: 260px;
+    height: 50px;
+    background-color: #fb565a;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.popUp__Btn:hover {
+    background-color: #e74246;
+}
+.popUp__Btn:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+.popUp__Btn:active span {
+    opacity: 0.3
+}
