@@ -176,3 +176,51 @@ header a {
     flex-direction: row;
     justify-content: space-around;
 }
+.aboutMe {
+    margin: 0 auto;
+    width: 1160px;
+    display: flex;
+}
+.aboutMe__title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.aboutMe__title + p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    width: 616px;
+}
+.ulTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.aboutMe__text li {
+    list-style-image: url("../img/aboutMe__marker_li.png");
+}
+.aboutMe__percent span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.persent_container p:nth-child(1) {
+    font-size: 45px;
+    font-weight: 700;
+}
+.persent_container p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.aboutMe__percent {
+    display: flex;
+    flex-direction: column;
+}
+.persent_container {
+    display: flex;
+}
