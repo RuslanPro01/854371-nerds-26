@@ -4,24 +4,26 @@
 <meta charset="utf-8">
 <title>Каталог</title>
 <link rel="stylesheet" href="css/Normalize.css">
+<link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
 <div class="container">
   <header class="container_part1">
-    <h1 class="visually-hidden">Каталог Nerds - design sttudio</h1>
-    <nav class="menu_header__part1"> <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds design studio" width="160" height="65"></a>
+    <nav class="menuHeader__part1">
+      <h2 class="visually-hidden">Навинация</h2>
+      <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <ul>
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Студия</a> </li>
+        <li><a href="#">Клиенты</a> </li>
+        <li><a href="Catalog.html">Магазин</a> </li>
+        <li><a href="#">Контакты</a> </li>
       </ul>
       <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
   </header>
 </div>
 <main class="main__catalog">
   <p>Магазин готовых шаблонов</p>
-  <div class="container"> 
+  <div class="container__mainCatalog"> 
     <!--        оставляю контейнер для разметки на flex-ах-->
     <section class="filtr">
       <h2 class="visually-hidden">Фильтр</h2>
@@ -62,7 +64,7 @@
         <button type="submit">Показать</button>
       </form>
     </section>
-    <section class="product">
+    <section class="items">
       <div class="productSort">
         <p>СОРТИРОВАТЬ</p>
         <a href="#">ПО ЦЕНЕ</a> <a href="#">ПО ТИПУ</a> <a href="#">ПО НАЗВАНИЮ</a> <a href="#"><img src="img/icon-up-dir.svg" alt="Вверходящая сортировка" width="11" height="10"></a> <a href="#"><img src="img/icon-down-dir.svg" alt="Низходящая сортировка сортировка" width="11" height="10"></a> </div>
@@ -98,16 +100,18 @@
   </div>
 </main>
 <footer>
-  <section class="map">
-    <h2 class="visually-hidden">Контакты</h2>
-    <!--      будет скрыто через visually hidden-->
-    <p>NЁRDS DESIGN STUDIO</p>
-    <address>
-    191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    </address>
-    <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-    <button class="WriteUs" type="button">Напишите нам</button>
-  </section>
+  <div class="container__map">
+    <section class="map">
+      <h2 class="visually-hidden">Контакты</h2>
+      <!--      будет скрыто через visually hidden-->
+      <p>NЁRDS DESIGN STUDIO</p>
+      <address>
+      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </address>
+      <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
+      <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+    </section>
+  </div>
   <section class="Contacts">
     <h2 class="visually-hidden">Связаться с нами</h2>
     <!--      будет скрыто через visually hidden-->
