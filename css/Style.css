@@ -343,8 +343,71 @@ header a {
 .popUp__Btn:active span {
     opacity: 0.3
 }
-.main__catalog p {
-    font-size: 55px;
-font-weight: bold;
+/***********************************************/
+/*Стилизация catalog*/
+.catalogTitle {
+    margin: 0 auto;
+    width: 1160px;
+    text-align: center;
     display: block;
+    padding-top: 82px;
+    padding-bottom: 116px;
+    font-size: 55px;
+    font-weight: bold;
+    background-color: #eeeeee;
+}
+.filtr form {
+    width: 260px;
+}
+.filtr legend {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.productSort {
+    display: flex;
+    align-items: center;
+    width: 760px;
+    justify-content: space-between;
+}
+.items__container {
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container__mainCatalog {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+.productSort a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+}
+.productSort a:hover, .productSort a:focus {
+    opacity: 1;
+}
+.PROPERTY__btn {
+    width: 260px;
+    height: 50px;
+    background-color: #eeeeee;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.PROPERTY__btn:hover {
+    background-color: #dfdfdf;
+}
+.PROPERTY__btn:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+.PROPERTY__btn:active span {
+    opacity: 0.3;
 }

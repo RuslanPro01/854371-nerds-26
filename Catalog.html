@@ -13,7 +13,7 @@
       <h2 class="visually-hidden">Навинация</h2>
       <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <ul>
-        <li><a href="#">Студия</a> </li>
+        <li><a href="index.html">Студия</a> </li>
         <li><a href="#">Клиенты</a> </li>
         <li><a href="Catalog.html">Магазин</a> </li>
         <li><a href="#">Контакты</a> </li>
@@ -22,7 +22,7 @@
   </header>
 </div>
 <main class="main__catalog">
-  <p>Магазин готовых шаблонов</p>
+  <p class="catalogTitle">Магазин готовых шаблонов</p>
   <div class="container__mainCatalog"> 
     <!--        оставляю контейнер для разметки на flex-ах-->
     <section class="filtr">
@@ -61,7 +61,7 @@
             <input type="checkbox" name="Basket">
             Корзина </label>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="PROPERTY__btn" type="submit"><span>Показать</span></button>
       </form>
     </section>
     <section class="items">
@@ -70,31 +70,32 @@
         <a href="#">ПО ЦЕНЕ</a> <a href="#">ПО ТИПУ</a> <a href="#">ПО НАЗВАНИЮ</a> <a href="#"><img src="img/icon-up-dir.svg" alt="Вверходящая сортировка" width="11" height="10"></a> <a href="#"><img src="img/icon-down-dir.svg" alt="Низходящая сортировка сортировка" width="11" height="10"></a> </div>
       <h2 class="visually-hidden">Что мы умеем</h2>
       <!--        будет скрыто через visually hidden-->
-      <div>
-        <h3 class="title__product">SEDONA</h3>
-        <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
-        <p>Информационный сайт для туристов</p>
-        <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
-        <h3 class="title__product">PINK APP</h3>
-        <p>Продуктовый лендинг приложения для iOS и Android</p>
-        <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
-        <h3 class="title__product">BARBERSHOP</h3>
-        <p>Сайт салона красоты. Для мужчин, да.</p>
-        <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
-        <h3 class="title__product">MISHKA</h3>
-        <p>Интернет-магазин вязаных игрушек</p>
-        <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
-        <p class="title__product">A PLUS</p>
-        <h3>Лендинг курсов повышения квалификации</h3>
-        <a href="#">9 900 руб.</a></div>
-      <div> <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
-        <h3 class="title__product">КВАСТ</h3>
-        <p>Промо-сайт производителя крафтового кваса</p>
-        <a href="#">9 900 руб.</a></div>
+      <div class="items__container">
+        <div> <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
+          <h3 class="title__product">SEDONA</h3>
+          <p class="displayNone">Информационный сайт для туристов</p>
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+        <div> <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
+          <h3 class="title__product">PINK APP</h3>
+          <p class="displayNone">Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+        <div> <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
+          <h3 class="title__product">BARBERSHOP</h3>
+          <p class="displayNone">Сайт салона красоты. Для мужчин, да.</p>
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+        <div> <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
+          <h3 class="title__product">MISHKA</h3>
+          <p class="displayNone">Интернет-магазин вязаных игрушек</p>
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+        <div> <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
+          <h3 class="title__product">A PLUS</h3>
+          <p class="displayNone">Лендинг курсов повышения квалификации</p >
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+        <div> <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
+          <h3 class="title__product">КВАСТ</h3>
+          <p class="displayNone">Промо-сайт производителя крафтового кваса</p>
+          <a href="#" class="displayNone">9 900 руб.</a></div>
+      </div>
     </section>
     <div class="pages"> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">СЛЕДУЮЩАЯ</a> </div>
   </div>
@@ -127,7 +128,7 @@
 </footer>
 <section class="popUp">
   <h2 class="visually-hidden">Форма связи</h2>
-  <!--      будет скрыто через visually hidden-->
+    <p>Напишите нам</p>
   <form action="https://echo.htmlacademy.ru" name="PopUp">
     <label>Ваше имя:
       <input type="text" placeholder="Ваше Имя" name="FLName" required autofocus>
@@ -138,7 +139,7 @@
     <label>Текст письма:
       <textarea placeholder="В свободной форме" name="comment" cols="60" rows="20" required></textarea>
     </label>
-    <button type="submit">ОТПРАВИТЬ</button>
+    <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
     <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
   </form>
 </section>
