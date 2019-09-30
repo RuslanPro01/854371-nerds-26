@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -69,6 +69,7 @@ header a {
     font-weight: bold;
     display: block;
     width: 380px;
+    line-height: 55px;
 }
 .title_promo .titlePromoText {
     font-size: 16px;
@@ -267,12 +268,13 @@ header a {
     font-weight: 400;
     line-height: 18px;
     font-style: normal;
+    color: #666666;
 }
 .map a {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    color: #000000;
+    color: #666666;
 }
 .WriteUs {
     width: 219px;
@@ -306,10 +308,12 @@ header a {
 .sale span {
     font-size: 36px;
     font-weight: 700;
+    line-height: 36px;
 }
 .sale p {
     font-size: 16px;
     font-weight: 400;
+    color: #444444;
 }
 .popUp {
     width: 960px;
@@ -318,6 +322,7 @@ header a {
 .popUp p {
     font-size: 45px;
     font-weight: 500;
+    line-height: 22px;
 }
 .popUp label {
     font-size: 16px;
@@ -353,7 +358,8 @@ header a {
     padding-top: 82px;
     padding-bottom: 116px;
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 500;
+    line-height: 55px;
     background-color: #eeeeee;
 }
 .filtr form {
@@ -370,6 +376,11 @@ header a {
     align-items: center;
     width: 760px;
     justify-content: space-between;
+}
+.productSort P {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
 }
 .items__container {
     width: 760px;
@@ -398,8 +409,10 @@ header a {
     height: 50px;
     background-color: #eeeeee;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 18px;
+    border: none;
+    text-transform: uppercase;
 }
 .PROPERTY__btn:hover {
     background-color: #dfdfdf;
@@ -410,4 +423,39 @@ header a {
 }
 .PROPERTY__btn:active span {
     opacity: 0.3;
+}
+.pages {
+    display: flex;
+}
+.pages a:nth-child(1), .pages a:nth-child(2), .pages a:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+}
+.pages a:nth-child(1):hover, .pages a:nth-child(2):hover, .pages a:nth-child(3):hover, .pages a:nth-child(4):hover {
+    background-color: #dfdfdf;
+}
+.pages a:nth-child(1):active, .pages a:nth-child(2):active, .pages a:nth-child(3):active, .pages a:nth-child(4):active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+.pages a:nth-child(1):active span, .pages a:nth-child(2):active span, .pages a:nth-child(3):active span, .pages a:nth-child(3):active span {
+    opacity: 0.3;
+}
+.pages a:nth-child(4) {
+    width: 260px;
+    height: 50px;
+    display: block;
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
 }
