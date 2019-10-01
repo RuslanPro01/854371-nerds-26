@@ -1,8 +1,16 @@
 @charset "utf-8";
 body {
     font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
     margin: 0;
     padding: 0;
+}
+main, footer {
+    display: flex;
+    flex-direction: column;
 }
 img {
     max-width: 100%;
@@ -24,7 +32,8 @@ li {
 /*Стилли для Index*/
 header a {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 30px;
     color: #000000;
     text-transform: uppercase;
 }
@@ -66,7 +75,7 @@ header a {
 }
 .title_promo .title {
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 500;
     display: block;
     width: 380px;
     line-height: 55px;
@@ -76,7 +85,8 @@ header a {
     font-weight: 400;
     line-height: 24px;
     display: block;
-    width: 365px
+    width: 365px;
+    color: #283136;
 }
 .title_promo li:nth-child(1)::after {
     background: url("../img/slide1.png")
@@ -87,7 +97,7 @@ header a {
     height: 50px;
     background-color: #fb565a;
     text-align: center;
-    line-height: 50px;
+    line-height: 18px;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -113,6 +123,7 @@ header a {
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
+    color: #283136;
 }
 .order_1 {
     display: block;
@@ -194,6 +205,7 @@ header a {
     line-height: 24px;
     display: block;
     width: 616px;
+    color: #283136;
 }
 .ulTitle {
     font-size: 16px;
@@ -203,6 +215,9 @@ header a {
 }
 .aboutMe__text li {
     list-style-image: url("../img/aboutMe__marker_li.png");
+    color: #283136;
+    font-weight: 400;
+    line-height: 24px;
 }
 .aboutMe__percent span {
     font-size: 16px;
@@ -254,7 +269,6 @@ header a {
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
-    padding-top: 54px;
     width: 1440px;
     height: 416px;
 }
@@ -283,6 +297,7 @@ header a {
     border: none;
     font-size: 16px;
     font-weight: 500;
+    line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -314,6 +329,7 @@ header a {
     font-size: 16px;
     font-weight: 400;
     color: #444444;
+    line-height: 11px;
 }
 .popUp {
     width: 960px;
@@ -322,7 +338,7 @@ header a {
 .popUp p {
     font-size: 45px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 45px;
 }
 .popUp label {
     font-size: 16px;
@@ -409,7 +425,7 @@ header a {
     height: 50px;
     background-color: #eeeeee;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 18px;
     border: none;
     text-transform: uppercase;
@@ -435,7 +451,7 @@ header a {
     color: #000000;
     font-size: 16px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 22px;
     text-align: center;
 }
 .pages a:nth-child(1):hover, .pages a:nth-child(2):hover, .pages a:nth-child(3):hover, .pages a:nth-child(4):hover {
@@ -456,6 +472,34 @@ header a {
     color: #000000;
     font-size: 16px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 22px;
     text-align: center;
+}
+.socialNetwork a {
+    display: block;
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+.socialNetwork a {
+    position: relative;
+}
+.Vk a::after {
+    content: url("../img/vk-icon.svg");
+    position: absolute;
+}
+.Fb a::after {
+    content: url("../img/fb-icon.svg");
+    position: absolute;
+}
+.Insta a::after {
+    content: url("../img/insta-icon.svg");
+    position: absolute;
+}
+.variantsNetwork label, .PROPERTY label {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
 }
