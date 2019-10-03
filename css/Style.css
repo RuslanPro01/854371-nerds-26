@@ -38,19 +38,27 @@ header a {
     text-transform: uppercase;
 }
 .basket {
-    padding-left: 26px;
+    display: block;
+    position: relative;
+}
+.basket::before {
+    position: absolute;
+    content: "";
     background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
+    left: -26px;
+    top: 25%;
+    width: 15px;
+    height: 15px;
 }
-.container {
-    margin: 0 auto;
+
+.container_part1 {
     background-color: #eeeeee;
 }
-.container_part1 {
-    margin: 0 auto;
-    width: 1160px;
-}
 .menuHeader__part1 {
+     margin: 0 auto;
+    width: 1160px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,12 +74,11 @@ header a {
 .displayNone {
     display: none;
 }
-.containerSlider__main {
-    background-color: #eeeeee;
-}
 .promo_slids {
     margin: 0 auto;
     width: 1160px;
+    background-color: #eeeeee;
+    min-height: 413px;
 }
 .title_promo .title {
     font-size: 55px;
@@ -94,7 +101,7 @@ header a {
 .titlePromoLink {
     display: block;
     width: 240px;
-    height: 50px;
+    padding: 13px 0;
     background-color: #fb565a;
     text-align: center;
     line-height: 18px;
@@ -128,11 +135,11 @@ header a {
 .order_1 {
     display: block;
     width: 160px;
-    height: 50px;
     background-color: #fb565a;
     text-align: center;
-    line-height: 50px;
+    padding: 13px 0;
     color: #ffffff;
+    line-height: 18px;
 }
 .order_1:hover {
     background-color: #e74246;
@@ -147,10 +154,10 @@ header a {
 .order_2 {
     display: block;
     width: 160px;
-    height: 50px;
+    padding: 13px 0;
     background-color: #00ca74;
     text-align: center;
-    line-height: 50px;
+    line-height: 18px;
     color: #ffffff;
 }
 .order_2:hover {
@@ -166,10 +173,10 @@ header a {
 .order_3 {
     display: block;
     width: 160px;
-    height: 50px;
+    padding: 13px 0;
     background-color: #efc84a;
     text-align: center;
-    line-height: 50px;
+    line-height: 18px;
     color: #ffffff;
 }
 .order_3:hover {
