@@ -95,8 +95,15 @@ header a {
     width: 365px;
     color: #283136;
 }
-.title_promo li:nth-child(1)::after {
-    background: url("../img/slide1.png")
+.title_promo li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 698px;
+    height: 413px;
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+    left: 431px;
+    top: -17px;
 }
 .titlePromoLink {
     display: block;
@@ -119,6 +126,17 @@ header a {
 }
 .titlePromoLink:active span {
     opacity: 0.3;
+}
+.product {
+    position: relative
+}
+.ilustration_1::before {
+    content: "";
+    background-image: url("../img/illustration-1.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 146px;
+    position: absolute;
 }
 .product_cart p:nth-child(1) {
     font-size: 24px;
@@ -195,11 +213,17 @@ header a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    min-height: 347px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 .aboutMe {
     margin: 0 auto;
     width: 1160px;
     display: flex;
+    min-height: 525px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
 }
 .aboutMe__title {
     font-size: 45px;
@@ -221,10 +245,19 @@ header a {
     text-transform: uppercase;
 }
 .aboutMe__text li {
-    list-style-image: url("../img/aboutMe__marker_li.png");
+    display: block;
+    list-style: none;
     color: #283136;
     font-weight: 400;
     line-height: 24px;
+}
+/*Я сломал мозги и не понимаю, почему фоновое не хочет добавляться*/
+.aboutMe__text li::before {
+    position: relative;
+    content: "";
+    background-color: #fb565a;
+    width: 25px;
+    height: 2px;
 }
 .aboutMe__percent span {
     font-size: 16px;
@@ -251,6 +284,8 @@ header a {
 .partners_container {
     margin: 0 auto;
     width: 1160px;
+    min-height: 180px;
+    border-bottom: 2px solid #eeeeee;
 }
 .partners {
     display: flex;
@@ -278,11 +313,14 @@ header a {
     margin: 0 auto;
     width: 1440px;
     height: 416px;
+    margin-top: 80px;
 }
 .map p {
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
+    margin: 0px;
+    margin-top: 54px; 
 }
 .map address {
     font-size: 16px;
@@ -323,6 +361,9 @@ header a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    min-height: 79px;
+    margin-top: 69px;
+    margin-bottom: 69px;
 }
 .socialNetwork {
     display: flex;
@@ -339,8 +380,14 @@ header a {
     line-height: 11px;
 }
 .popUp {
+    min-height: 590px;
     width: 960px;
     margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+.popUp form {
+    display: flex;
+    flex-direction: column;
 }
 .popUp p {
     font-size: 45px;
@@ -509,4 +556,8 @@ header a {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+}
+.title_promo {
+    padding: inherit;
+    position: relative
 }
