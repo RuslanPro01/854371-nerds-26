@@ -12,8 +12,8 @@
   <nav class="menuHeader__part1">
     <h2 class="visually-hidden">Навинация</h2>
     <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
-    <ul>
-      <li><a href="#">Студия</a> </li>
+    <ul class="header_links">
+      <li class="header_link_active"><a href="#">Студия</a> </li>
       <li><a href="#">Клиенты</a> </li>
       <li><a href="Catalog.html">Магазин</a> </li>
       <li><a href="#">Контакты</a> </li>
@@ -40,14 +40,7 @@
           <a href="#" class="titlePromoLink"><span>Узнать больше</span></a> </li>
       </ul>
     </div>
-    <div class="radioNav">
-      <input type="radio" id="sliderBtn1" name="NavSlider" checked>
-      <input type="radio" id="sliderBtn2" name="NavSlider">
-      <input type="radio" id="sliderBtn3" name="NavSlider">
-      <label for="sliderBtn1"></label>
-      <label for="sliderBtn2"></label>
-      <label for="sliderBtn3"></label>
-    </div>
+    <div class="slider-controls"> <i class="active"></i> <i></i> <i></i> </div>
   </section>
   <section class="product">
     <h2 class="visually-hidden">Что мы умеем</h2>
@@ -56,11 +49,11 @@
       <p class="title_product_cart">ВЕБ-САЙТЫ</p>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       <a href="#" class="order_1"><span>ЗАКАЗАТЬ</span></a> </div>
-    <div class="product_cart">
+    <div class="product_cart ilustration_2">
       <p class="title_product_cart">ПРИЛОЖЕНИЯ</p>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       <a href="#" class="order_2"><span>ЗАКАЗАТЬ</span></a> </div>
-    <div class="product_cart">
+    <div class="product_cart ilustration_3">
       <p class="title_product_cart">ПРЕЗЕНТАЦИИ</p>
       <p>Вы даже не подозреваете, вы изумительны!</p>
       <a href="#" class="order_3"><span>ЗАКАЗАТЬ</span></a> </div>
@@ -109,12 +102,14 @@
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
       <!--      будет скрыто через visually hidden-->
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address>
-      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-      <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+      <div class="container__mapText">
+        <p>NЁRDS DESIGN STUDIO</p>
+        <address>
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+        <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
+        <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+      </div>
     </section>
   </div>
   <section class="Contacts">
