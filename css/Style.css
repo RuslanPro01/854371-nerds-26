@@ -371,9 +371,7 @@ header a {
     margin-top: 69px;
     margin-bottom: 69px;
 }
-.socialNetwork {
-    display: flex;
-}
+
 .sale span {
     font-size: 36px;
     font-weight: 700;
@@ -553,37 +551,6 @@ line-height: 18px;
     line-height: 22px;
     text-align: center;
 }
-.socialNetwork a {
-    display: block;
-    width: 79px;
-    height: 79px;
-    border-radius: 50%;
-    background-color: #eeeeee;
-}
-.socialNetwork a {
-    position: relative;
-}
-.socialNetwork a:hover {
-    background-color: #e74246;
-}
-.Vk a:active a::before {
-    opacity: 0.3;
-}
-.Vk a::after {
-    content: url("../img/vk-icon.svg");
-    position: absolute;
-    margin: 33%;
-}
-.Fb a::after {
-    content: url("../img/fb-icon.svg");
-    position: absolute;
-    margin: 33%;
-}
-.Insta a::after {
-    content: url("../img/insta-icon.svg");
-    position: absolute;
-    margin: 33%;
-}
 .variantsNetwork label, .PROPERTY label {
     color: #283136;
     font-size: 16px;
@@ -654,4 +621,52 @@ line-height: 18px;
     width: 300px;
     height: 146px;
     top: 0px;
+}
+
+.socialNetwork {
+    display: flex;
+    min-width: 260px;
+}
+
+.Social {
+    display: inline-block;
+    width: 79px;
+    height: 79px;
+    margin-right: 12px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+.Social:hover {
+    background-color: #e74246;
+}
+.Social:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.Vk {
+    background-image: url("../img/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Vk:active {
+    background-blend-mode: soft-light;
+}
+
+.Fb {
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Fb:active {
+    background-blend-mode: soft-light;
+}
+
+.Insta {
+    background-image: url("../img/insta-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Insta:active {
+    background-blend-mode: soft-light;
 }
