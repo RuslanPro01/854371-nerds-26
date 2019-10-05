@@ -7,18 +7,18 @@
 <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-  <header class="container_part1">
-    <nav class="menuHeader__part1">
-      <h2 class="visually-hidden">Навинация</h2>
-      <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
-      <ul>
-        <li><a href="index.html">Студия</a> </li>
-        <li><a href="#">Клиенты</a> </li>
-        <li><a href="Catalog.html">Магазин</a> </li>
-        <li><a href="#">Контакты</a> </li>
-      </ul>
-      <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
-  </header>
+<header class="container_part1">
+  <nav class="menuHeader__part1">
+    <h2 class="visually-hidden">Навинация</h2>
+    <a class="logotype" href="#"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
+    <ul>
+      <li><a href="index.html">Студия</a> </li>
+      <li><a href="#">Клиенты</a> </li>
+      <li><a href="Catalog.html">Магазин</a> </li>
+      <li><a href="#">Контакты</a> </li>
+    </ul>
+    <a href="#" class="basket"><span class="basket__text"> Корзина </span></a> </nav>
+</header>
 <main class="main__catalog">
   <p class="catalogTitle">Магазин готовых шаблонов</p>
   <div class="container__mainCatalog"> 
@@ -70,10 +70,12 @@
         <h2 class="visually-hidden">Что мы умеем</h2>
         <!--        будет скрыто через visually hidden-->
         <div class="items__container">
-          <div> <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
-            <h3 class="title__product">SEDONA</h3>
-            <p class="displayNone">Информационный сайт для туристов</p>
-            <a href="#" class="displayNone">9 900 руб.</a></div>
+          <div class="items__cart"> <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
+            <div class="items_cart">
+              <h3 class="title__product">SEDONA</h3>
+              <p class="description__product">Информационный сайт для туристов</p>
+              <a href="#" class="cost__product">9 900 руб.</a></div>
+          </div>
           <div> <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
             <h3 class="title__product">PINK APP</h3>
             <p class="displayNone">Продуктовый лендинг приложения для iOS и Android</p>
