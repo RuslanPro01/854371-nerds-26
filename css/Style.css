@@ -669,7 +669,6 @@ header a {
 .logotype:active {
     opacity: 0.3
 }
-
 .items_cart {
     position: relative;
     margin: 0;
@@ -678,14 +677,9 @@ header a {
     min-height: 231px;
     background-color: #eeeeee;
 }
-.title__product,
-.description__product,
-.cost__product {
+.title__product, .description__product, .cost__product {
     display: block;
 }
-
-
-
 .cost__product {
     position: absolute;
     width: 200px;
@@ -693,11 +687,10 @@ header a {
     background-color: #fb565a;
     color: #ffffff;
     text-align: center;
-    padding: 13px 0; 
+    padding: 13px 0;
     bottom: 43px;
     left: 80px;
 }
-
 .description__product {
     width: 176px;
     min-height: 34px;
@@ -707,13 +700,11 @@ header a {
     left: 92px;
     margin: 0px;
 }
-
 .title__product {
     position: absolute;
     margin: 0 auto;
     left: 143px
 }
-
 .items__cart {
     position: relative;
 }
