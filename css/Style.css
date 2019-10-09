@@ -36,21 +36,18 @@ header a {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+    display: block;
+    position: relative;
 }
 .basket {
     display: block;
     position: relative;
 }
 .basket::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/cart-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    left: -26px;
-    top: 25%;
+    content: url("../img/cart-icon.svg");
     width: 15px;
     height: 15px;
+    margin-right: 26px;
 }
 .container_part1 {
     background-color: #eeeeee;
@@ -75,10 +72,7 @@ header a {
     display: none;
 }
 .promo_slids {
-    margin: 0 auto;
-    width: 1160px;
     background-color: #eeeeee;
-    min-height: 413px;
 }
 .title_promo .title {
     font-size: 55px;
@@ -103,7 +97,7 @@ header a {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
     left: 431px;
-    top: -17px;
+    top: -1px;
 }
 .titlePromoLink {
     display: block;
@@ -131,7 +125,7 @@ header a {
 .product {
     position: relative
 }
-.ilustration_1::before {
+.ilustration_1 {
     content: "";
     background-image: url("../img/illustration-1.png");
     background-repeat: no-repeat;
@@ -223,6 +217,7 @@ header a {
     margin: 0 auto;
     width: 1160px;
     display: flex;
+    justify-content: space-between;
     padding-top: 49px;
     min-height: 446px;
     border-top: 2px solid #eeeeee;
@@ -280,22 +275,33 @@ header a {
 .aboutMe__percent {
     display: flex;
     flex-direction: column;
+    width: 360px;
+}
+.aboutMe__percent span {
+    text-align: center;
 }
 .persent_container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
+.persent_container div {
+    width: 106px;
+}
 .partners_container {
     margin: 0 auto;
     width: 1160px;
-    padding-top: 46px;
     min-height: 134px;
     border-bottom: 2px solid #eeeeee;
 }
 .partners {
     display: flex;
     justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+.partners li {
+    transform: translateY(35%);
 }
 .partners a {
     opacity: 0.2;
@@ -312,6 +318,7 @@ header a {
     margin: 0 auto;
     background-color: #ffffff;
     margin-left: 140px;
+        margin-top: 54px;
 }
 .container__map {
     background-image: url("../img/map.jpg");
@@ -326,7 +333,6 @@ header a {
     font-weight: 700;
     line-height: 30px;
     margin: 0px;
-    margin-top: 54px;
 }
 .map address {
     font-size: 16px;
@@ -680,31 +686,24 @@ header a {
 .title__product, .description__product, .cost__product {
     display: block;
 }
-.cost__product {
-    position: absolute;
-    width: 200px;
-    height: 24px;
-    background-color: #fb565a;
-    color: #ffffff;
-    text-align: center;
-    padding: 13px 0;
-    bottom: 43px;
-    left: 80px;
-}
-.description__product {
-    width: 176px;
-    min-height: 34px;
-    text-align: center;
-    position: absolute;
-    bottom: 123px;
-    left: 92px;
-    margin: 0px;
-}
-.title__product {
-    position: absolute;
+
+.promo_slids_container {
     margin: 0 auto;
-    left: 143px
+    width: 1160px;
+    min-height: 413px;
 }
-.items__cart {
-    position: relative;
+
+.aboutMe__text {
+    width: 650px;
+}
+
+.container__mapText {
+    margin: 0;
+    padding: 0px;
+    width: 219px;
+    min-height: 219px;
+    transform: translateX(50px) translateY(47px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
