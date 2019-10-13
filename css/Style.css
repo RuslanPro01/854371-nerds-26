@@ -64,6 +64,7 @@ header a {
 .menuHeader__part1 ul {
     width: 438px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
@@ -207,6 +208,7 @@ header a {
     width: 1160px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     min-height: 347px;
@@ -706,4 +708,18 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+form fieldset {
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/checkbox-on.svg");
 }

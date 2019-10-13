@@ -13,7 +13,7 @@
     <a class="logotype" href="#">
     <img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65">
     </a>
-    <ul>
+    <ul class="header_links">
       <li>
         <a href="index.html">
         Студия
@@ -24,7 +24,7 @@
         Клиенты
         </a>
       </li>
-      <li>
+      <li class="header_link_active">
         <a href="Catalog.html">
         Магазин
         </a>
@@ -55,29 +55,29 @@
         </fieldset>
         <fieldset class="variantsNetwork">
           <legend>СЕТКИ</legend>
-          <input type="radio" id="Adaptive" name="Network" vallue="Adapt" checked>
+          <input class="filter-input-radio visually-hidden" type="radio" id="Adaptive" name="Network" vallue="Adapt" checked>
           <label for="Adaptive">Адаптивная</label>
-          <input type="radio" id="Fix" name="Network" vallue="Net">
+          <input class="filter-input-radio visually-hidden" type="radio" id="Fix" name="Network" vallue="Net">
           <label for="Fix">Фиксированная</label>
-          <input type="radio" id="Rubber" name="Network" vallue="Rub">
+          <input class="filter-input-radio visually-hidden" type="radio" id="Rubber" name="Network" vallue="Rub">
           <label for="Rubber">Резиновая</label>
         </fieldset>
         <fieldset class="PROPERTY">
           <legend>ОСОБЕННОСТИ:</legend>
           <label>
-            <input type="checkbox" name="Slider" checked>
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Slider" checked>
             Слайдер </label>
           <label>
-            <input type="checkbox" name="Property">
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Property">
             Блок преимуществ </label>
           <label>
-            <input type="checkbox" name="News" checked>
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="News" checked>
             Новости </label>
           <label>
-            <input type="checkbox" name="Galary">
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Galary">
             Галерея </label>
           <label>
-            <input type="checkbox" name="Basket">
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Basket">
             Корзина </label>
         </fieldset>
         <button class="PROPERTY__btn" type="submit"><span>Показать</span></button>
@@ -180,33 +180,29 @@
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
       <!--      будет скрыто через visually hidden-->
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address>
-      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <a href="tel:+78122757575">
-      тел. +7 (812) 275-75-75
-      </a>
-      <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+      <div class="container__mapText">
+        <p>NЁRDS DESIGN STUDIO</p>
+        <address>
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+        <a href="tel:+78122757575">
+        тел. +7 (812) 275-75-75
+        </a>
+        <button class="WriteUs" type="button"><span>Напишите нам</span></button>
+      </div>
     </section>
   </div>
   <section class="Contacts">
-    <h2 class="visually-hidden">Связаться с нами</h2>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
-    <ul class="socialNetwork">
-      <li class="Vk">
-        <a href="#">
-        </a>
-      </li>
-      <li class="Fb">
-        <a href="#">
-        </a>
-      </li>
-      <li class="Insta">
-        <a href="#">
-        </a>
-      </li>
-    </ul>
+    <div class="socialNetwork">
+      <a class="Social Vk" href="#">
+      </a>
+      <a class="Social Fb" href="#">
+      </a>
+      <a class="Social Insta" href="#">
+      </a>
+    </div>
     <div class="sale">
       <span>Давайте дружить, это выгодно!</span>
       <p>Скидка 10% для друзей из социальных сетей.</p>
