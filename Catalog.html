@@ -54,31 +54,46 @@
           <input type="text" name="maxCost" placeholder="ДО">
         </fieldset>
         <fieldset class="variantsNetwork">
-          <legend>СЕТКИ</legend>
-          <input class="filter-input-radio visually-hidden" type="radio" id="Adaptive" name="Network" vallue="Adapt" checked>
-          <label for="Adaptive">Адаптивная</label>
-          <input class="filter-input-radio visually-hidden" type="radio" id="Fix" name="Network" vallue="Net">
-          <label for="Fix">Фиксированная</label>
-          <input class="filter-input-radio visually-hidden" type="radio" id="Rubber" name="Network" vallue="Rub">
-          <label for="Rubber">Резиновая</label>
+          <legend>СЕТКА:</legend>
+          <ul class="variantsNetworkList">
+            <li>
+              <input class="filter-input-radio visually-hidden" type="radio" id="Adaptive" name="Network" vallue="Adapt" checked>
+              <label for="Adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input class="filter-input-radio visually-hidden" type="radio" id="Fix" name="Network" vallue="Net">
+              <label for="Fix">Фиксированная</label>
+            </li>
+            <li>
+              <input class="filter-input-radio visually-hidden" type="radio" id="Rubber" name="Network" vallue="Rub">
+              <label for="Rubber">Резиновая</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="PROPERTY">
           <legend>ОСОБЕННОСТИ:</legend>
-          <label>
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Slider" checked>
-            Слайдер </label>
-          <label>
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Property">
-            Блок преимуществ </label>
-          <label>
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="News" checked>
-            Новости </label>
-          <label>
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Galary">
-            Галерея </label>
-          <label>
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Basket">
-            Корзина </label>
+          <ul class="propertyList">
+            <li>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox"  id="Slid" name="Slider" checked>
+              <label for="Slid">Слайдер</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" id="Proper" name="Property">
+              <label for="Proper">Блок преимуществ</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" id="New" name="News" checked>
+              <label for="New">Новости</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" id="Galar" name="Galary">
+              <label for="Galar">Галерея</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" id="Bas" name="Basket">
+              <label for="Bas">Корзина</label>
+            </li>
+          </ul>
         </fieldset>
         <button class="PROPERTY__btn" type="submit"><span>Показать</span></button>
       </form>
@@ -107,8 +122,10 @@
         <!--        будет скрыто через visually hidden-->
         <div class="items__container">
           <div class="items__cart">
+            <div class="item_header">
+            </div>
             <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
-            <div class="items_cart">
+            <div class="description_item">
               <h3 class="title__product">SEDONA</h3>
               <p class="description__product">Информационный сайт для туристов</p>
               <a href="#" class="cost__product">
@@ -116,7 +133,9 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="items__cart">
+              <div class="item_header">
+            </div>
             <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
             <h3 class="title__product">PINK APP</h3>
             <p class="displayNone">Продуктовый лендинг приложения для iOS и Android</p>
@@ -124,7 +143,9 @@
             9 900 руб.
             </a>
           </div>
-          <div>
+          <div class="items__cart">
+              <div class="item_header">
+            </div>
             <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
             <h3 class="title__product">BARBERSHOP</h3>
             <p class="displayNone">Сайт салона красоты. Для мужчин, да.</p>
@@ -132,7 +153,9 @@
             9 900 руб.
             </a>
           </div>
-          <div>
+          <div class="items__cart">
+              <div class="item_header">
+            </div>
             <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
             <h3 class="title__product">MISHKA</h3>
             <p class="displayNone">Интернет-магазин вязаных игрушек</p>
@@ -140,7 +163,9 @@
             9 900 руб.
             </a>
           </div>
-          <div>
+          <div class="items__cart">
+              <div class="item_header">
+            </div>
             <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
             <h3 class="title__product">A PLUS</h3>
             <p class="displayNone">Лендинг курсов повышения квалификации</p >
@@ -148,7 +173,9 @@
             9 900 руб.
             </a>
           </div>
-          <div>
+          <div class="items__cart">
+              <div class="item_header">
+            </div>
             <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
             <h3 class="title__product">КВАСТ</h3>
             <p class="displayNone">Промо-сайт производителя крафтового кваса</p>
