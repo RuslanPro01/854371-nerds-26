@@ -328,6 +328,7 @@ header a {
     align-items: center;
     margin-top: 46px;
     margin-bottom: 35px;
+    flex-wrap: wrap;
 }
 .partners li:nth-child(1) {
     padding-top: 11px;
@@ -413,6 +414,7 @@ header a {
     line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
+    margin-top: 37px;
 }
 .WriteUs:hover {
     background-color: #e74246;
@@ -768,8 +770,18 @@ header a {
     transform: translateX(50px) translateY(47px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
+.container__mapText p {
+    padding-top: 2px;
+}
+.container__mapText address {
+    margin-top: 22px;
+}
+.container__mapText a {
+    margin-top: 20px;
+    padding-left: 2px;
+}
+
 form fieldset {
     border: none;
     margin: 0 auto;
@@ -1035,4 +1047,12 @@ input[type="image"] {
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
+}
+
+.sale {
+    padding-right: 219px;
+    padding-top: 5px;
+}
+.sale p {
+    margin-top: 12px;
 }
