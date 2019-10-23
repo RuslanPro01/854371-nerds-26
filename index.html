@@ -203,16 +203,19 @@
 <section class="popUp">
   <h2 class="visually-hidden">Форма связи</h2>
   <p>Напишите нам</p>
-  <form action="https://echo.htmlacademy.ru" name="PopUp">
-    <label>Ваше имя:
-      <input type="text" placeholder="Ваше Имя" name="FLName" required autofocus>
-    </label>
-    <label>Ваш e-mail:
-      <input type="email" placeholder="email@example.com" name="eMail" required>
-    </label>
-    <label>Текст письма:
-      <textarea placeholder="В свободной форме" name="comment" cols="80" rows="5" required></textarea>
-    </label>
+  <form action="https://echo.htmlacademy.ru" class="feedback-form" name="PopUp">
+    <ul class="feedback-form_container">
+      <li class="feedback-form_input">
+        <label for="popUp_Text">Ваше имя:</label>
+        <input type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required autofocus>
+      </li>
+      <li class="feedback-form_input">
+        <label for="popUp_email">Ваш e-mail:</label>
+        <input type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
+      </li>
+    </ul>
+    <label for="popUp_textarea">Текст письма:</label>
+    <textarea placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
     <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
     <input type="image" src="img/close-cross.svg" alt="Конопка закрытия формы" width="21" height="21">
   </form>
