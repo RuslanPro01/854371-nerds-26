@@ -514,8 +514,8 @@ header a {
     width: 1160px;
     text-align: center;
     display: block;
-    padding-top: 82px;
-    padding-bottom: 116px;
+    padding-top: 68px;
+    padding-bottom: 109px;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
@@ -627,6 +627,8 @@ header a {
     content: " ";
     height: 2px;
     background-color: #fb565a;
+    position: relative;
+    top: 3px;
 }
 .header_links a:hover, .header_links + a:hover {
     color: #fb565a;
