@@ -572,6 +572,7 @@ header a {
     line-height: 18px;
     border: none;
     text-transform: uppercase;
+    margin-top: 42px;
 }
 .PROPERTY__btn:hover {
     background-color: #dfdfdf;
@@ -791,6 +792,12 @@ form fieldset {
     display: flex;
     flex-direction: column;
 }
+.variantsNetworkList {
+    margin-top: 12px;
+}
+.variantsNetworkList li:nth-child(n+2) {
+    margin-top: 11px;
+}
 .variantsNetworkList, .propertyList {
     margin: 0;
     padding: 0;
@@ -798,6 +805,12 @@ form fieldset {
 }
 .variantsNetworkList li, .propertyList li {
     padding-left: 37px;
+}
+.propertyList {
+    margin-top: 11px;
+}
+.propertyList li:nth-child(n+2) {
+    margin-top: 11px;
 }
 .list_index li {
     margin-bottom: 24px;
@@ -1057,4 +1070,23 @@ input[type="image"] {
 }
 .sale p {
     margin-top: 12px;
+}
+
+.range-filter {
+    margin-top: 48px;
+}
+
+.variantsNetwork {
+    margin-top: 54px;
+}
+.variantsNetwork legend {
+    margin-bottom: 11px;
+}
+
+.filtr {
+    margin-top: 55px;
+}
+
+.PROPERTY {
+    margin-top: 40px;
 }
