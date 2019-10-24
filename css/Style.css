@@ -383,7 +383,7 @@ header a {
     margin: 0 auto;
     width: 1440px;
     height: 416px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .map p {
     font-size: 18px;
@@ -541,11 +541,12 @@ header a {
     font-weight: 700;
     line-height: 18px;
 }
-.items__container {
+.items__container{
     width: 760px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 56px;
 }
 .container__mainCatalog {
     display: flex;
@@ -586,6 +587,7 @@ header a {
 }
 .pages {
     display: flex;
+    margin-top: 26px;
 }
 .pages a {
     width: 50px;
@@ -874,17 +876,17 @@ input[type="checkbox"] + label::before {
     font-weight: 400;
     line-height: 18px;
     color: #666666;
-    margin-top: 21px;
+    margin-top: 15px;
     width: 227px;
     text-align: center;
-    transform: translateX(35%);
+    transform: translateX(30%);
 }
 .title__product {
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
-    margin-top: 31px;
+    margin-top: 28px;
 }
 .description_item {
     width: 360px;
@@ -908,10 +910,10 @@ input[type="checkbox"] + label::before {
     height: 50px;
     border: none;
     cursor: pointer;
-    margin-top: 35px;
-    transform: translateX(35%);
+    margin-top: 31px;
+    transform: translateX(40%);
 }
-.items__cart {
+.items__cart1 {
     position: relative;
 }
 .items__cart:hover .description_item {
@@ -1089,4 +1091,13 @@ input[type="image"] {
 
 .PROPERTY {
     margin-top: 40px;
+}
+
+.items__container1 {
+    margin-top: 59px;
+}
+
+.items__cart {
+    position: relative;
+    margin-bottom: 24px;
 }
