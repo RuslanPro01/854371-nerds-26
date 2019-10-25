@@ -433,7 +433,7 @@ header a {
     justify-content: space-between;
     min-height: 79px;
     margin-top: 69px;
-    margin-bottom: 69px;
+    margin-bottom: 76px;
 }
 .sale span {
     font-size: 36px;
@@ -447,13 +447,13 @@ header a {
     line-height: 11px;
 }
 .feedback-form input[type="text"], .feedback-form input[type="email"] {
-    width: 345px;
-    height: 50px;
-    border: 2px solid #d7dcde;
+    width: 341px;
+    height: 46px;
     opacity: 0.5;
     color: #444444;
     line-height: 18px;
     padding-left: 15px;
+    margin-top: 3px;
 }
 .feedback-form input[type="text"]:hover, .feedback-form input[type="email"]:hover, .feedback-form textarea:hover {
     border: 2px solid #b4b9bb;
@@ -466,8 +466,11 @@ header a {
     line-height: 18px;
 }
 .popUp {
-    position: relative;
-    padding: 38px 90px 84px 99px;
+    position: fixed;
+    bottom: 179px;
+    left: 282px;
+    background-color: #ffffff;
+    padding: 38px 74px 84px 99px;
     height: 453px;
     width: 786px;
     margin: 0 auto;
@@ -477,15 +480,20 @@ header a {
     display: flex;
     flex-direction: column;
     width: 760px;
+    margin-top: 35px;
 }
 .popUp p {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
+    margin-top: 13px;
 }
 .popUp label {
     font-size: 16px;
     font-weight: 700;
+}
+label[for="popUp_textarea"] {
+    margin-top: 27px;
 }
 .popUp__Btn {
     width: 260px;
@@ -496,6 +504,7 @@ header a {
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
+    margin-top: 47px;
 }
 .popUp__Btn:hover {
     background-color: #e74246;
@@ -994,18 +1003,18 @@ input[type="checkbox"] + label::before {
 }
 .feedback-form textarea {
     width: 726px;
-    height: 118px;
-    margin-right: 0;
+    height: 89px;
     resize: none;
-    padding-top: 14px;
+    padding-top: 11px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     overflow: auto;
     border: 2px solid #d7dcde;
     opacity: 0.5;
     color: #444444;
     line-height: 18px;
+    margin-top: 3px;
 }
 .feedback-form_container {
     display: flex;
