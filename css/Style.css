@@ -465,7 +465,12 @@ header a {
     font-weight: 400;
     line-height: 18px;
 }
+.feedback-form input[type="text"]:invalid, .feedback-form input[type="email"]:invalid, .feedback-form textarea:invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
 .popUp {
+    display: none;
     position: fixed;
     bottom: 179px;
     left: 282px;
@@ -1024,12 +1029,6 @@ input[type="checkbox"] + label::before {
     display: flex;
     flex-direction: column;
 }
-input[type="image"] {
-    position: absolute;
-    right: 90px;
-    top: 78px;
-    opacity: 0.3;
-}
 .slider-controls {
     position: absolute;
     left: 535px;
@@ -1058,15 +1057,6 @@ input[type="image"] {
 .persent_element p:nth-child(2) {
     margin-top: 26px;
 }
-/*
-.partners li:nth-child(-n+3)::after{
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
-}
-*/
 .partners_line {
     content: "";
     display: inline-block;
@@ -1109,4 +1099,26 @@ input[type="image"] {
 .items__cart {
     position: relative;
     margin-bottom: 24px;
+}
+
+.popUp_exit {
+    position: relative;
+    bottom: 428px;
+    left: 749px;
+    background-color: transparent;
+    border: none;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/close-cross.svg");
+    cursor: pointer;
+    opacity: 0.3;
+}
+.popUp_exit:hover {
+    opacity: 1.0;
+}
+.popUp_exit:active {
+    opacity: 0.1;
+}
+.popUpShow {
+    display: block;
 }
