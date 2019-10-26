@@ -25,14 +25,14 @@ closePopUp.addEventListener("click", function (evt) {
     modalPopUp.classList.remove("popUpShow");
 });
 
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", function (e) {
     if (e.keyCode === 27) {
-      if(modalPopUp.classList.contains("popUpShow")) {
-        e.preventDefault();
-        modalPopUp.classList.remove("popUpShow");
-      }
+        if (modalPopUp.classList.contains("popUpShow")) {
+            e.preventDefault();
+            modalPopUp.classList.remove("popUpShow");
+        }
     }
-  });
+});
 
 flName.focus();
 

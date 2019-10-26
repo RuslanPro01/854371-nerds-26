@@ -416,14 +416,14 @@ header a {
     color: #ffffff;
     margin-top: 37px;
 }
-.WriteUs:hover {
+.WriteUs:hover, .cost__product:hover {
     background-color: #e74246;
 }
-.WriteUs:active {
+.WriteUs:active, .cost__product:active {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
-.WriteUs:active span {
+.WriteUs:active span, .cost__product:active span {
     opacity: 0.3
 }
 .Contacts {
@@ -470,21 +470,18 @@ header a {
     color: #e74246;
 }
 @keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .popUp {
     display: none;
@@ -572,7 +569,7 @@ label[for="popUp_textarea"] {
     font-weight: 700;
     line-height: 18px;
 }
-.items__container{
+.items__container {
     width: 760px;
     display: flex;
     justify-content: space-between;
@@ -817,7 +814,6 @@ label[for="popUp_textarea"] {
     margin-top: 20px;
     padding-left: 2px;
 }
-
 form fieldset {
     border: none;
     margin: 0 auto;
@@ -828,7 +824,7 @@ form fieldset {
 .variantsNetworkList {
     margin-top: 12px;
 }
-.variantsNetworkList li:nth-child(n+2) {
+.variantsNetworkList li:nth-child(n + 2) {
     margin-top: 11px;
 }
 .variantsNetworkList, .propertyList {
@@ -842,7 +838,7 @@ form fieldset {
 .propertyList {
     margin-top: 11px;
 }
-.propertyList li:nth-child(n+2) {
+.propertyList li:nth-child(n + 2) {
     margin-top: 11px;
 }
 .list_index li {
@@ -1081,7 +1077,6 @@ input[type="checkbox"] + label::before {
     height: 52px;
     background-color: #eeeeee;
 }
-
 .sale {
     padding-right: 219px;
     padding-top: 5px;
@@ -1089,35 +1084,28 @@ input[type="checkbox"] + label::before {
 .sale p {
     margin-top: 12px;
 }
-
 .range-filter {
     margin-top: 48px;
 }
-
 .variantsNetwork {
     margin-top: 54px;
 }
 .variantsNetwork legend {
     margin-bottom: 11px;
 }
-
 .filtr {
     margin-top: 55px;
 }
-
 .PROPERTY {
     margin-top: 40px;
 }
-
 .items__container1 {
     margin-top: 59px;
 }
-
 .items__cart {
     position: relative;
     margin-bottom: 24px;
 }
-
 .popUp_exit {
     position: relative;
     bottom: 428px;
