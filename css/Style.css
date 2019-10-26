@@ -8,13 +8,6 @@ body {
     margin: 0;
     padding: 0;
 }
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, hgroup, menu, section, summary, time, mark, audio, video, main, nav, header {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-}
 sup {
     font-size: 28px;
 }
@@ -671,7 +664,7 @@ label[for="popUp_textarea"] {
 .title_promo li {
     padding-top: 67px;
 }
-.radioNav input[type="radio"] label::before {
+input[type="radio"] label::before {
     content: " ";
     width: 18px;
     height: 18px;
@@ -838,7 +831,7 @@ form fieldset {
 .propertyList {
     margin-top: 11px;
 }
-.propertyList li:nth-child(n + 2) {
+.propertyList li:nth-child(n+2) {
     margin-top: 11px;
 }
 .list_index li {
