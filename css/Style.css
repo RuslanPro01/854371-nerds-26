@@ -469,6 +469,23 @@ header a {
     border-color: #e74246;
     color: #e74246;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 .popUp {
     display: none;
     position: fixed;
@@ -1121,4 +1138,5 @@ input[type="checkbox"] + label::before {
 }
 .popUpShow {
     display: block;
+    animation: bounce 0.6s;
 }
