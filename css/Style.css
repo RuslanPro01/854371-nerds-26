@@ -24,7 +24,7 @@ a {
 li {
     list-style-type: none;
 }
-.visually-hidden {
+.visuallyHidden {
     visibility: hidden;
     position: absolute;
     clip: rect(0 0 0 0);
@@ -370,13 +370,17 @@ header a {
     margin-left: 140px;
     margin-top: 54px;
 }
-.container__map {
+.map a:nth-child(3) {
+    margin-top: 20px;
+}
+
+.containerMap {
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 1440px;
     height: 416px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .map p {
     font-size: 18px;
@@ -390,8 +394,9 @@ header a {
     line-height: 18px;
     font-style: normal;
     color: #666666;
+    margin-top: 24px;
 }
-.map a {
+.map a:nth-child(-n+3) {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -399,15 +404,17 @@ header a {
 }
 .WriteUs {
     width: 219px;
-    height: 50px;
     background-color: #fb565a;
     border: none;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: #ffffff;
     margin-top: 37px;
+    padding-top: 17px;
+    padding-bottom: 15px;
 }
 .WriteUs:hover, .cost__product:hover {
     background-color: #e74246;
@@ -788,7 +795,7 @@ input[type="radio"] label::before {
 .aboutMe__text {
     width: 650px;
 }
-.container__mapText {
+.containerMapText {
     margin: 0;
     padding: 0px;
     width: 219px;
@@ -927,9 +934,8 @@ input[type="checkbox"] + label::before {
     border-radius: 3px;
     font-weight: 500;
     width: 200px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-top: 31px;
     transform: translateX(40%);
 }
