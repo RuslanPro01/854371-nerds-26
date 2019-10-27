@@ -1147,6 +1147,7 @@ input[type="checkbox"] + label::before {
 }
 .variantsNetworkList li:hover {
     opacity: 1;
+    outline: auto;
 }
 .variantsNetworkList li:disabled {
     opacity: 0.1;

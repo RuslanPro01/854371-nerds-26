@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Каталог</title>
 <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/ministyle.css">
+<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -72,15 +72,15 @@
         <fieldset class="variantsNetwork">
           <legend>СЕТКА:</legend>
           <ul class="variantsNetworkList">
-            <li>
+            <li tabindex="0">
               <input class="filterInputRadio visuallyHidden" type="radio" id="Adaptive" name="Network" checked>
               <label for="Adaptive">Адаптивная</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputRadio visuallyHidden" type="radio" id="Fix" name="Network">
               <label for="Fix">Фиксированная</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputRadio visuallyHidden" type="radio" id="Rubber" name="Network">
               <label for="Rubber">Резиновая</label>
             </li>
@@ -89,23 +89,23 @@
         <fieldset class="PROPERTY">
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="propertyList">
-            <li>
+            <li tabindex="0">
               <input class="filterInputCheckbox visuallyHidden" type="checkbox"  id="Slid" name="Slider" checked>
               <label for="Slid">Слайдер</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Proper" name="Property">
               <label for="Proper">Блок преимуществ</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="New" name="News" checked>
               <label for="New">Новости</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Galar" name="Galary">
               <label for="Galar">Галерея</label>
             </li>
-            <li>
+            <li tabindex="0">
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Bas" name="Basket">
               <label for="Bas">Корзина</label>
             </li>
@@ -239,11 +239,11 @@
     <h2 class="visuallyHidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
     <div class="socialNetwork">
-      <a class="Social Vk" href="#">
+      <a class="Social Vk" href="#" alt="Социальная сеть ВКонтакте">
       </a>
-      <a class="Social Fb" href="#">
+      <a class="Social Fb" href="#" alt="Социальная сеть Facebook">
       </a>
-      <a class="Social Insta" href="#">
+      <a class="Social Insta" href="#" alt="Социальная сеть Инстаграм">
       </a>
     </div>
     <div class="sale">
@@ -272,6 +272,6 @@
     <input class="popUpExit" type="button" value=".">
   </form>
 </section>
-<script src="js/minimagic.js"></script>
+<script src="js/magic.js"></script>
 </body>
 </html>
