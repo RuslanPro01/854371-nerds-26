@@ -1,7 +1,7 @@
 // JavaScript Document
 var button = document.querySelector(".WriteUs");
 var modalPopUp = document.querySelector(".popUp");
-var closePopUp = modalPopUp.querySelector("input.popUp_exit");
+var closePopUp = modalPopUp.querySelector("input.popUpExit");
 var flName = modalPopUp.querySelector("[name=FLName]");
 var eMail = modalPopUp.querySelector("[name=eMail]");
 var tArea = modalPopUp.querySelector("[name=comment]");

@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-<header class="container_part1">
-  <nav class="menuHeader__part1">
+<header class="containerPart1">
+  <nav class="menuHeaderPart1">
     <h2 class="visuallyHidden">Навинация</h2>
     <a class="logotype" href="index.html">
     <img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65">
     </a>
-    <ul class="header_links">
+    <ul class="headerLinks">
       <li>
         <a href="index.html">
         Студия
@@ -25,7 +25,7 @@
         Клиенты
         </a>
       </li>
-      <li class="header_link_active">
+      <li class="headerLinkActive">
         <a href="catalog.html">
         Магазин
         </a>
@@ -37,34 +37,34 @@
       </li>
     </ul>
     <a href="#" class="basket">
-    <span class="basket__text"> Корзина </span>
+    <span class="basketText"> Корзина </span>
     </a>
   </nav>
 </header>
-<main class="main__catalog">
+<main class="mainCatalog">
   <p class="catalogTitle">Магазин готовых шаблонов</p>
-  <div class="container__mainCatalog">
+  <div class="containerMainCatalog">
     <!--        оставляю контейнер для разметки на flex-ах-->
     <section class="filtr">
       <h2 class="visuallyHidden">Фильтр</h2>
       <!--        будет скрыто через visually hidden-->
       <form action="https://echo.htmlacademy.ru" name="typeNetwork" method="post">
-        <fieldset class="filter-item">
+        <fieldset class="filterItem">
           <legend>Стоимость:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
+          <div class="rangeFilter">
+            <div class="rangeControls">
               <div class="scale">
                 <div class="bar" style="margin-left: 20%; width: 30%"></div>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <div class="toggle toggleMin"></div>
+              <div class="toggle toggleMax"></div>
             </div>
-            <div class="price-controls">
-              <label class="min-price">от
-                <input name="min-price" type="text" value="0">
+            <div class="priceControls">
+              <label class="minPrice">от
+                <input name="minPrice" type="text" value="0">
               </label>
-              <label class="max-price">до
-                <input name="max-price" type="text" value="15000">
+              <label class="maxPrice">до
+                <input name="maxPrice" type="text" value="15000">
               </label>
             </div>
           </div>
@@ -73,15 +73,15 @@
           <legend>СЕТКА:</legend>
           <ul class="variantsNetworkList">
             <li>
-              <input class="filter-input-radio visuallyHidden" type="radio" id="Adaptive" name="Network" checked>
+              <input class="filterInputRadio visuallyHidden" type="radio" id="Adaptive" name="Network" checked>
               <label for="Adaptive">Адаптивная</label>
             </li>
             <li>
-              <input class="filter-input-radio visuallyHidden" type="radio" id="Fix" name="Network">
+              <input class="filterInputRadio visuallyHidden" type="radio" id="Fix" name="Network">
               <label for="Fix">Фиксированная</label>
             </li>
             <li>
-              <input class="filter-input-radio visuallyHidden" type="radio" id="Rubber" name="Network">
+              <input class="filterInputRadio visuallyHidden" type="radio" id="Rubber" name="Network">
               <label for="Rubber">Резиновая</label>
             </li>
           </ul>
@@ -90,31 +90,31 @@
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="propertyList">
             <li>
-              <input class="filter-input-checkbox visuallyHidden" type="checkbox"  id="Slid" name="Slider" checked>
+              <input class="filterInputCheckbox visuallyHidden" type="checkbox"  id="Slid" name="Slider" checked>
               <label for="Slid">Слайдер</label>
             </li>
             <li>
-              <input class="filter-input-checkbox visuallyHidden" type="checkbox" id="Proper" name="Property">
+              <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Proper" name="Property">
               <label for="Proper">Блок преимуществ</label>
             </li>
             <li>
-              <input class="filter-input-checkbox visuallyHidden" type="checkbox" id="New" name="News" checked>
+              <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="New" name="News" checked>
               <label for="New">Новости</label>
             </li>
             <li>
-              <input class="filter-input-checkbox visuallyHidden" type="checkbox" id="Galar" name="Galary">
+              <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Galar" name="Galary">
               <label for="Galar">Галерея</label>
             </li>
             <li>
-              <input class="filter-input-checkbox visuallyHidden" type="checkbox" id="Bas" name="Basket">
+              <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Bas" name="Basket">
               <label for="Bas">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button class="PROPERTY__btn" type="submit"><span>Показать</span></button>
+        <button class="PropertyBtn" type="submit"><span>Показать</span></button>
       </form>
     </section>
-    <div class="items__container1">
+    <div class="itemsContainer1">
       <section class="items">
         <div class="productSort">
           <p>СОРТИРОВАТЬ:</p>
@@ -140,71 +140,71 @@
         </div>
         <h2 class="visuallyHidden">Что мы умеем</h2>
         <!--        будет скрыто через visually hidden-->
-        <div class="items__container">
-          <div class="items__cart">
-            <div class="item_header">
+        <div class="itemsContainer">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">SEDONA</a>
-              <p class="description__product">Информационный сайт для&#160;туристов.</p>
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">SEDONA</a>
+              <p class="descriptionProduct">Информационный сайт для&#160;туристов.</p>
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="items__cart">
-            <div class="item_header">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">PINK APP</a>
-              <p class="description__product">Продуктовый лендинг приложения&#160;для iOS и Android</p>
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">PINK APP</a>
+              <p class="descriptionProduct">Продуктовый лендинг приложения&#160;для iOS и Android</p>
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="items__cart">
-            <div class="item_header">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">BARBERSHOP</a>
-              <p class="description__product">Сайт салона красоты. Для&#160;мужчин, да.</p>
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">BARBERSHOP</a>
+              <p class="descriptionProduct">Сайт салона красоты. Для&#160;мужчин, да.</p>
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="items__cart">
-            <div class="item_header">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">MISHKA</a>
-              <p class="description__product">Интернет-магазин вязаных&#160;игрушек</p>
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">MISHKA</a>
+              <p class="descriptionProduct">Интернет-магазин вязаных&#160;игрушек</p>
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="items__cart">
-            <div class="item_header">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">A PLUS</a>
-              <p class="description__product">Лендинг курсов повышения квалификации</p >
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">A PLUS</a>
+              <p class="descriptionProduct">Лендинг курсов повышения квалификации</p >
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="items__cart">
-            <div class="item_header">
+          <div class="itemsCart">
+            <div class="itemHeader">
             </div>
             <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
-            <div class="description_item">
-              <a href="#" class="title__product">КВАСТ</a>
-              <p class="description__product">Промо-сайт производителя крафтового кваса</p>
-              <a href="#" class="cost__product"><span>9 900 руб.</span></a>
+            <div class="descriptionItem">
+              <a href="#" class="titleProduct">КВАСТ</a>
+              <p class="descriptionProduct">Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
             </div>
           </div>
         </div>
       </section>
       <div class="pages">
-        <p class="pages_active">1</p>
+        <p class="pagesActive">1</p>
         <a href="#">
         <span>2</span>
         </a>
@@ -256,12 +256,12 @@
   <h2 class="visuallyHidden">Форма связи</h2>
   <p>Напишите нам</p>
   <form action="https://echo.htmlacademy.ru" class="feedback-form" name="PopUp">
-    <ul class="feedback-form_container">
-      <li class="feedback-form_input">
+    <ul class="feedbackFormContainer">
+      <li class="feedbackFormInput">
         <label for="popUp_text">Ваше имя:</label>
-        <input type="text" placeholder="Имя Фамилия" name="FLName" id="popUp_text" required>
+        <input type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
       </li>
-      <li class="feedback-form_input">
+      <li class="feedbackFormInput">
         <label for="popUp_email">Ваш e-mail:</label>
         <input type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
       </li>
@@ -269,7 +269,7 @@
     <label for="popUp_textarea">Текст письма:</label>
     <textarea placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
     <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
-    <input class="popUp_exit" type="button" value=".">
+    <input class="popUpExit" type="button" value=".">
   </form>
 </section>
 <script src="js/magic.js"></script>
