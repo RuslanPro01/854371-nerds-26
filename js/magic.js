@@ -50,7 +50,6 @@ if (storage) {
 Form.addEventListener("submit", function (evt) {
     if (!flName.value || !eMail.value || !tArea.value) {
         evt.preventDefault();
-        console.log('Нужно ввести логин, e-mail и написать письмо');
     } else {
         if (storageSupport) {
             localStorage.setItem("fLName", flName.value);
