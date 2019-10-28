@@ -58,6 +58,8 @@ header a {
     justify-content: space-between;
     align-items: center;
     padding-top: 49px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .menuHeaderPart1 ul {
     width: 438px;
@@ -219,6 +221,8 @@ header a {
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .aboutMe {
     margin: 0 auto;
@@ -229,6 +233,8 @@ header a {
     min-height: 485px;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .aboutMeTitle {
     font-size: 45px;
@@ -310,6 +316,8 @@ header a {
     margin: 0 auto;
     width: 1160px;
     border-bottom: 2px solid #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .partners {
     display: flex;
@@ -333,11 +341,11 @@ header a {
 }
 .partners li:nth-child(4) {
     position: relative;
-    left: -6px;
+    left: -9px;
     top: -6px;
 }
 .partners li:nth-child(5) {
-    padding-right: 31px;
+    padding-right: 25px;
     padding-top: 4px;
 }
 .partners li:nth-child(6) {
@@ -359,28 +367,26 @@ header a {
     opacity: 0.1;
 }
 .map {
+    position: absolute;
     width: 319px;
     height: 308px;
-    margin: 0 auto;
     background-color: #ffffff;
-    margin-left: 140px;
-    margin-top: 54px;
+    top: 55px;
+    left: 14.3%;
+    transform: translateX(-11.8%);
 }
 .map a:nth-child(3) {
     margin-top: 20px;
 }
 
 .containerMap {
-    background-image: url("../img/map.jpg");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 1440px;
-    height: 416px;
     margin-top: 80px;
+    position: relative;
 }
 
 .containerMapCatalog {
     margin-top: 60px;
+    position: relative;
 }
 .map p {
     font-size: 18px;
@@ -432,8 +438,10 @@ header a {
     display: flex;
     justify-content: space-between;
     min-height: 79px;
-    margin-top: 69px;
+    margin-top: 61px;
     margin-bottom: 76px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .sale span {
     font-size: 36px;
@@ -780,6 +788,8 @@ input[type="radio"] label::before {
     margin: 0 auto;
     width: 1160px;
     min-height: 421px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .aboutMeText {
     width: 650px;
@@ -828,7 +838,7 @@ form fieldset {
     margin-top: 11px;
 }
 .propertyList li:nth-child(n+2) {
-    margin-top: 11px;
+    margin-top: 10px;
 }
 .listIndex li {
     margin-bottom: 24px;
@@ -1034,7 +1044,7 @@ input[type="checkbox"] + label::before {
 }
 .sliderControls {
     position: absolute;
-    left: 535px;
+    left: 555px;
     top: 305px;
 }
 .sliderControls i:nth-child(2) {
@@ -1075,7 +1085,7 @@ input[type="checkbox"] + label::before {
     margin-top: 12px;
 }
 .rangeFilter {
-    margin-top: 48px;
+    margin-top: 50px;
 }
 .variantsNetwork {
     margin-top: 54px;
@@ -1084,13 +1094,13 @@ input[type="checkbox"] + label::before {
     margin-bottom: 11px;
 }
 .filtr {
-    margin-top: 55px;
+    margin-top: 54px;
 }
 .PROPERTY {
     margin-top: 40px;
 }
 .itemsContainer1 {
-    margin-top: 59px;
+    margin-top: 60px;
 }
 .itemsCart {
     position: relative;
