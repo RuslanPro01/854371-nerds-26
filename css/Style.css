@@ -544,6 +544,8 @@ label[for="popUp_textarea"] {
     font-weight: 500;
     line-height: 55px;
     background-color: #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .filtr form {
     width: 260px;
@@ -577,6 +579,8 @@ label[for="popUp_textarea"] {
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .productSort a {
     font-size: 14px;
