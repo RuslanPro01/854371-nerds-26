@@ -510,27 +510,6 @@ header a {
 label[for="popUp_textarea"] {
     margin-top: 27px;
 }
-.popUp__Btn {
-    width: 260px;
-    height: 50px;
-    background-color: #fb565a;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 47px;
-}
-.popUp__Btn:hover {
-    background-color: #e74246;
-}
-.popUp__Btn:active {
-    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
-}
-.popUp__Btn:active span {
-    opacity: 0.3
-}
 /***********************************************/
 /*Стилизация catalog*/
 .catalogTitle {
@@ -629,14 +608,14 @@ label[for="popUp_textarea"] {
     text-align: center;
     margin-right: 11px;
 }
-.pages a:nth-child(1):hover, .pages a:nth-child(2):hover, .pages a:nth-child(3):hover, .pages a:nth-child(4):hover {
+.pages a:nth-child(-n+5):hover {
     background-color: #dfdfdf;
 }
-.pages a:nth-child(1):active, .pages a:nth-child(2):active, .pages a:nth-child(3):active, .pages a:nth-child(4):active {
+.pages a:nth-child(-n+5):active {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
 }
-.pages a:nth-child(1):active span, .pages a:nth-child(2):active span, .pages a:nth-child(3):active span, .pages a:nth-child(3):active span {
+.pages a:nth-child(-n+5):active span {
     opacity: 0.3;
 }
 .pages a:nth-child(4) {
