@@ -422,14 +422,24 @@ header a {
     padding-top: 17px;
     padding-bottom: 15px;
 }
-.WriteUs:hover, .costProduct:hover {
+.WriteUs:hover{
     background-color: #e74246;
 }
-.WriteUs:active, .costProduct:active {
+.costProduct:hover {
+    background-color: #e74246;
+}
+.WriteUs:active {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
-.WriteUs:active span, .costProduct:active span {
+.costProduct:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+.WriteUs:active span {
+    opacity: 0.3
+}
+.costProduct:active span {
     opacity: 0.3
 }
 .Contacts {
@@ -454,7 +464,7 @@ header a {
     color: #444444;
     line-height: 11px;
 }
-.feedback-form input[type="text"], .feedback-form input[type="email"] {
+.feedbackInputs {
     width: 341px;
     height: 46px;
     opacity: 0.5;
@@ -462,18 +472,19 @@ header a {
     line-height: 18px;
     padding-left: 15px;
     margin-top: 3px;
+    
 }
-.feedback-form input[type="text"]:hover, .feedback-form input[type="email"]:hover, .feedback-form textarea:hover {
+.feedbackFormHover:hover {
     border: 2px solid #b4b9bb;
 }
-.feedback-form input[type="text"]:focus, .feedback-form input[type="email"]:focus, .feedback-form textarea:focus {
+.feedbackFormFocus:focus {
     border: 2px solid #000000;
     color: #444444;
     opacity: 1.0;
     font-weight: 400;
     line-height: 18px;
 }
-.feedback-form input[type="text"]:invalid, .feedback-form input[type="email"]:invalid, .feedback-form textarea:invalid {
+.feedbackFormInvalid:invalid {
     border-color: #e74246;
     color: #e74246;
 }
@@ -491,7 +502,7 @@ header a {
     margin: 0 auto;
     box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
-.feedback-form {
+.feedbackForm {
     display: flex;
     flex-direction: column;
     width: 760px;
@@ -509,6 +520,27 @@ header a {
 }
 label[for="popUp_textarea"] {
     margin-top: 27px;
+}
+.popUpBtn {
+    width: 260px;
+    height: 50px;
+    background-color: #fb565a;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 47px;
+}
+.popUpBtn:hover {
+    background-color: #e74246;
+}
+.popUpBtn:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+.popUpBtn:active span {
+    opacity: 0.3
 }
 /***********************************************/
 /*Стилизация catalog*/
@@ -568,7 +600,10 @@ label[for="popUp_textarea"] {
     color: #000000;
     opacity: 0.3;
 }
-.productSort a:hover, .productSort a:focus {
+.productSort a:hover {
+    opacity: 1;
+}
+.productSort a:focus {
     opacity: 1;
 }
 .PropertyBtn {
@@ -806,7 +841,7 @@ form fieldset {
 .variantsNetworkList {
     margin-top: 12px;
 }
-.variantsNetworkList li:nth-child(n + 2) {
+.variantsNetworkList li:nth-child(n+2) {
     margin-top: 11px;
 }
 .variantsNetworkList, .propertyList {
@@ -1002,7 +1037,7 @@ input[type="checkbox"] + label::before {
 .max-price {
     text-align: right;
 }
-.feedback-form textarea {
+.feedbackForm textarea {
     width: 726px;
     height: 89px;
     resize: none;
@@ -1079,7 +1114,7 @@ input[type="checkbox"] + label::before {
 .filtr {
     margin-top: 54px;
 }
-.PROPERTY {
+.property {
     margin-top: 40px;
 }
 .itemsContainer1 {
@@ -1153,4 +1188,137 @@ input[type="checkbox"] + label::before {
 }
 .propertyList li:disabled {
     opacity: 0.1;
+}
+.filterInputCheckbox:checked + label{
+    opacity: 1;
+}
+/*Анимация*/
+.popupOpenAnimate {
+  -webkit-animation-name: slideInDown;
+          animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.popupClose {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.popupError {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(-50%, -100%, 0);
+            transform: translate3d(-50%, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(-50%, -100%, 0);
+            transform: translate3d(-50%, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, -200%, 0);
+            transform: translate3d(-50%, -200%, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, -200%, 0);
+            transform: translate3d(-50%, -200%, 0);
+  }
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-60%, 0, 0);
+            transform: translate3d(-60%, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(-40%, 0, 0);
+            transform: translate3d(-40%, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-60%, 0, 0);
+            transform: translate3d(-60%, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(-40%, 0, 0);
+            transform: translate3d(-40%, 0, 0);
+  }
 }

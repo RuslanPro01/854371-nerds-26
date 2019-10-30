@@ -40,7 +40,7 @@
     <span class="basketText"> Корзина </span>
     </a>
   </nav>
-    <p class="catalogTitle">Магазин готовых шаблонов</p>
+  <p class="catalogTitle">Магазин готовых шаблонов</p>
 </header>
 <main class="mainCatalog">
   <div class="containerMainCatalog">
@@ -52,19 +52,22 @@
         <fieldset class="filterItem">
           <legend>Стоимость:</legend>
           <div class="rangeFilter">
+            <span class="visuallyHidden">Фильтр по стоимости шаблона</span>
             <div class="rangeControls">
               <div class="scale">
                 <div class="bar" style="margin-left: 20%; width: 30%"></div>
               </div>
-              <div class="toggle toggleMin"></div>
-              <div class="toggle toggleMax"></div>
+              <div class="toggle toggleMin"><span class="visuallyHidden">Выбор минимального значения</span></div>
+              <div class="toggle toggleMax"><span class="visuallyHidden">Выбор максимального значения</span></div>
             </div>
             <div class="priceControls">
               <label class="minPrice">от
                 <input name="minPrice" type="text" value="0">
+                <span class="visuallyHidden">Поле ввода минимального значения</span>
               </label>
               <label class="maxPrice">до
                 <input name="maxPrice" type="text" value="15000">
+                <span class="visuallyHidden">Поле ввода максимального значения</span>
               </label>
             </div>
           </div>
@@ -86,10 +89,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="PROPERTY">
+        <fieldset class="property">
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="propertyList">
-            <li tabindex="0">
+            <li>
               <input class="filterInputCheckbox visuallyHidden" type="checkbox"  id="Slid" name="Slider" checked>
               <label for="Slid">Слайдер</label>
             </li>
@@ -146,9 +149,13 @@
             </div>
             <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">SEDONA</a>
+              <a href="#" class="titleProduct">
+              SEDONA
+              </a>
               <p class="descriptionProduct">Информационный сайт для&#160;туристов.</p>
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
           <div class="itemsCart">
@@ -156,9 +163,13 @@
             </div>
             <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">PINK APP</a>
+              <a href="#" class="titleProduct">
+              PINK APP
+              </a>
               <p class="descriptionProduct">Продуктовый лендинг приложения&#160;для iOS и Android</p>
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
           <div class="itemsCart">
@@ -166,9 +177,13 @@
             </div>
             <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">BARBERSHOP</a>
+              <a href="#" class="titleProduct">
+              BARBERSHOP
+              </a>
               <p class="descriptionProduct">Сайт салона красоты. Для&#160;мужчин, да.</p>
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
           <div class="itemsCart">
@@ -176,9 +191,13 @@
             </div>
             <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">MISHKA</a>
+              <a href="#" class="titleProduct">
+              MISHKA
+              </a>
               <p class="descriptionProduct">Интернет-магазин вязаных&#160;игрушек</p>
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
           <div class="itemsCart">
@@ -186,9 +205,13 @@
             </div>
             <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">A PLUS</a>
+              <a href="#" class="titleProduct">
+              A PLUS
+              </a>
               <p class="descriptionProduct">Лендинг курсов повышения квалификации</p >
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
           <div class="itemsCart">
@@ -196,13 +219,18 @@
             </div>
             <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
             <div class="descriptionItem">
-              <a href="#" class="titleProduct">КВАСТ</a>
+              <a href="#" class="titleProduct">
+              КВАСТ
+              </a>
               <p class="descriptionProduct">Промо-сайт производителя крафтового кваса</p>
-              <a href="#" class="costProduct"><span>9 900 руб.</span></a>
+              <a href="#" class="costProduct">
+              <span>9 900 руб.</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
+        <span class="visuallyHidden">Блок навгиции по страницам</span>
       <div class="pages">
         <p class="pagesActive">1</p>
         <a href="#">
@@ -220,7 +248,7 @@
 </main>
 <footer class="footer">
   <div class="containerMapCatalog">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CGH5yNOm" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGH5yNOm" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
     <section class="map">
       <h2 class="visuallyHidden">Контакты</h2>
       <!--      будет скрыто через visually hidden-->
@@ -232,7 +260,9 @@
         <a href="tel:+78122757575">
         тел. +7 (812) 275-75-75
         </a>
-        <a href="#" class="WriteUs"><span>Напишите нам</span></a>
+        <a href="#" class="WriteUs">
+        <span>Напишите нам</span>
+        </a>
       </div>
     </section>
   </div>
@@ -240,11 +270,11 @@
     <h2 class="visuallyHidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
     <div class="socialNetwork">
-      <a class="Social Vk" href="#" alt="Социальная сеть ВКонтакте">
+      <a class="Social Vk" href="#" title="Социальная сеть ВКонтакте">
       </a>
-      <a class="Social Fb" href="#" alt="Социальная сеть Facebook">
+      <a class="Social Fb" href="#" title="Социальная сеть Facebook">
       </a>
-      <a class="Social Insta" href="#" alt="Социальная сеть Инстаграм">
+      <a class="Social Insta" href="#" title="Социальная сеть Инстаграм">
       </a>
     </div>
     <div class="sale">
@@ -256,21 +286,21 @@
 <section class="popUp">
   <h2 class="visuallyHidden">Форма связи</h2>
   <p>Напишите нам</p>
-  <form action="https://echo.htmlacademy.ru" class="feedback-form" name="PopUp">
+  <form action="https://echo.htmlacademy.ru" class="feedbackForm" name="PopUp">
     <ul class="feedbackFormContainer">
       <li class="feedbackFormInput">
-        <label for="popUp_text">Ваше имя:</label>
-        <input type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
+        <label for="popUp_text">Имя Фамилия:</label>
+        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
       </li>
       <li class="feedbackFormInput">
         <label for="popUp_email">Ваш e-mail:</label>
-        <input type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
+        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
       </li>
     </ul>
     <label for="popUp_textarea">Текст письма:</label>
-    <textarea placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
-    <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
-    <input class="popUpExit" type="button" value=".">
+    <textarea class="feedbackFormFocus feedbackFormHover feedbackFormInvalid" placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
+    <button class="popUpBtn" type="submit"><span>ОТПРАВИТЬ</span></button>
+    <input class="popUpExit" type="button" value="." aria-label="Закрыть форму">
   </form>
 </section>
 <script src="js/magic.js"></script>

@@ -2,27 +2,25 @@
 var button = document.querySelector(".WriteUs");
 var modalPopUp = document.querySelector(".popUp");
 var closePopUp = modalPopUp.querySelector("input.popUpExit");
+var form = modalPopUp.querySelector("form");
 var flName = modalPopUp.querySelector("[name=FLName]");
-var eMail = modalPopUp.querySelector("[name=eMail]");
-var tArea = modalPopUp.querySelector("[name=comment]");
-var Form = modalPopUp.querySelector("form");
-var storageSupport = true;
-var storage = "";
+var email = modalPopUp.querySelector("[name=eMail]");
+var textArea = modalPopUp.querySelector("[name=comment]");
+//var submitForm = modalPopUp.querySelector("[type=submit]");
 
-try {
-    storage = localStorage.getItem("flName");
-} catch (err) {
-    storageSupport = false;
-}
 
 button.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopUp.classList.add("popUpShow");
+    modalPopUp.classList.add("popupOpenAnimate");
+    flName.focus();
 });
 
 closePopUp.addEventListener("click", function (evt) {
     evt.preventDefault();
+    modalPopUp.classList.add("popupClose");
     modalPopUp.classList.remove("popUpShow");
+    modalPopUp.classList.remove("popupOpenAnimate");
 });
 
 window.addEventListener("keydown", function (e) {
@@ -30,29 +28,14 @@ window.addEventListener("keydown", function (e) {
         if (modalPopUp.classList.contains("popUpShow")) {
             e.preventDefault();
             modalPopUp.classList.remove("popUpShow");
+            modalPopUp.classList.remove("popupOpenAnimate")
         }
     }
 });
 
-flName.focus();
-
-if (storage) {
-    flName.value = storage;
-    eMail.focus();
-} else {
-    flName.focus();
-}
-
-if (storage) {
-    flName.value = storage;
-}
-
-Form.addEventListener("submit", function (evt) {
-    if (!flName.value || !eMail.value || !tArea.value) {
-        evt.preventDefault();
-    } else {
-        if (storageSupport) {
-            localStorage.setItem("fLName", flName.value);
-        }
+form.addEventListener("submit", function (evt) {
+    if (!flName.value || !email.value || !textArea.value) {
+    evt.preventDefault();
+    modalPopUp.classList.add("popupClose");
     }
 });

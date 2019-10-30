@@ -75,9 +75,9 @@
         </ul>
       </div>
       <div class="sliderControls">
-        <i class="active"></i>
-        <i></i>
-        <i></i>
+        <i class="active"><span class="visuallyHidden">1 слайд</span></i>
+        <i><span class="visuallyHidden">2 слайд</span></i>
+        <i><span class="visuallyHidden">3 слайд</span></i>
       </div>
     </div>
   </section>
@@ -197,11 +197,11 @@
     <h2 class="visuallyHidden">Социальные сети</h2>
     <!--      будет скрыто через visually hidden-->
     <div class="socialNetwork">
-      <a class="Social Vk" href="#">
+      <a class="Social Vk" href="#" title="Социальная сеть ВКонтакте">
       </a>
-      <a class="Social Fb" href="#">
+      <a class="Social Fb" href="#" title="Социальная сеть Facebook">
       </a>
-      <a class="Social Insta" href="#">
+      <a class="Social Insta" href="#" title="Социальная сеть Инстаграм">
       </a>
     </div>
     <div class="sale">
@@ -213,21 +213,21 @@
 <section class="popUp">
   <h2 class="visuallyHidden">Форма связи</h2>
   <p>Напишите нам</p>
-  <form action="https://echo.htmlacademy.ru" class="feedback-form" name="PopUp">
+  <form action="https://echo.htmlacademy.ru" class="feedbackForm" name="PopUp">
     <ul class="feedbackFormContainer">
       <li class="feedbackFormInput">
         <label for="popUp_text">Ваше имя:</label>
-        <input type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
+        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
       </li>
       <li class="feedbackFormInput">
         <label for="popUp_email">Ваш e-mail:</label>
-        <input type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
+        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
       </li>
     </ul>
     <label for="popUp_textarea">Текст письма:</label>
-    <textarea placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
-    <button class="popUp__Btn" type="submit"><span>ОТПРАВИТЬ</span></button>
-    <input class="popUpExit" type="button" value=".">
+    <textarea class="feedbackFormFocus feedbackFormHover feedbackFormInvalid" placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
+    <button class="popUpBtn" type="submit"><span>ОТПРАВИТЬ</span></button>
+    <input class="popUpExit" type="button" value="." aria-label="Закрыть форму">
   </form>
 </section>
 <script src="js/magic.js"></script>
