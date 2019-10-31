@@ -148,14 +148,6 @@ header a {
 .product {
     position: relative
 }
-.ilustration1 {
-    content: "";
-    background-image: url("../img/illustration-1.png");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 146px;
-    top: 0px;
-}
 .order1 {
     display: block;
     width: 160px;
@@ -270,6 +262,7 @@ header a {
 .aboutMeText li::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 2px;
     background-color: #fb565a;
@@ -376,7 +369,7 @@ header a {
     transform: translateX(-11.8%);
 }
 .map a:nth-child(3) {
-    margin-top: 20px;
+    margin-top: 17px;
 }
 
 .containerMap {
@@ -418,9 +411,9 @@ header a {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    margin-top: 37px;
+    margin-top: 38px;
     padding-top: 17px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 .WriteUs:hover{
     background-color: #e74246;
@@ -448,7 +441,7 @@ header a {
     display: flex;
     justify-content: space-between;
     min-height: 79px;
-    margin-top: 61px;
+    margin-top: 59px;
     margin-bottom: 76px;
     padding-left: 20px;
     padding-right: 20px;
@@ -484,7 +477,7 @@ header a {
     font-weight: 400;
     line-height: 18px;
 }
-.feedbackFormInvalid:invalid {
+.feedbackFormInvalid {
     border-color: #e74246;
     color: #e74246;
 }
@@ -675,10 +668,17 @@ label[for="popUp_textarea"] {
     position: relative;
     top: 3px;
 }
-.headerLinks a:hover, .headerLinks + a:hover {
+.headerLinks a:hover {
     color: #fb565a;
 }
-.headerLinks a:active, .headerLinks + a:active {
+.headerLinks + a:hover {
+    color: #fb565a;
+}
+.headerLinks a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+.headerLinks + a:active {
     color: #000000;
     opacity: 0.3;
 }
@@ -714,6 +714,27 @@ input[type="radio"] label::before {
     width: 300px;
     height: 347px;
 }
+.productCart1::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-1.png");
+}
+.productCart2::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-2.png");
+}
+.productCart3::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-3.png");
+}
 .productCart a {
     margin-top: 32px;
 }
@@ -725,28 +746,13 @@ input[type="radio"] label::before {
     font-weight: 700;
     line-height: 30px;
 }
-.ilustration2 {
-    content: "";
-    background-image: url("../img/illustration-2.png");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 146px;
-    top: 0px;
-}
-.ilustration3 {
-    content: "";
-    background-image: url("../img/illustration-3.png");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 146px;
-    top: 0px;
-}
 .socialNetwork {
     display: flex;
     min-width: 260px;
 }
 .Social {
     display: inline-block;
+    vertical-align: baseline;
     width: 79px;
     height: 79px;
     margin-right: 12px;
@@ -856,7 +862,7 @@ form fieldset {
     margin-top: 11px;
 }
 .propertyList li:nth-child(n+2) {
-    margin-top: 10px;
+    margin-top: 11px;
 }
 .listIndex li {
     margin-bottom: 24px;
@@ -864,6 +870,7 @@ form fieldset {
 input[type="radio"]:checked + label::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 25px;
     background-image: url("../img/radio-on.svg");
@@ -874,6 +881,7 @@ input[type="radio"]:checked + label::before {
 input[type="radio"] + label::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 25px;
     background-image: url("../img/radio-off.svg");
@@ -884,6 +892,7 @@ input[type="radio"] + label::before {
 input[type="checkbox"]:checked + label::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 25px;
     background-image: url("../img/checkbox-on.svg");
@@ -894,6 +903,7 @@ input[type="checkbox"]:checked + label::before {
 input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 25px;
     background-image: url("../img/checkbox-off.svg");
@@ -901,16 +911,6 @@ input[type="checkbox"] + label::before {
     background-repeat: no-repeat;
     position: absolute;
     left: 0px
-}
-.itemHeader {
-    width: 360px;
-    height: 40px;
-    background-image: url("../img/browser.svg");
-    background-repeat: no-repeat;
-    opacity: 0.12;
-}
-.itemsCart:hover .itemHeader {
-    opacity: 1;
 }
 .descriptionProduct {
     font-size: 16px;
@@ -972,6 +972,7 @@ input[type="checkbox"] + label::before {
     width: 44px;
     height: 44px;
     display: inline-block;
+    vertical-align: baseline;
     text-align: center;
     margin-right: 11px;
 }
@@ -1018,6 +1019,7 @@ input[type="checkbox"] + label::before {
 }
 .priceControls label {
     display: inline-block;
+    vertical-align: baseline;
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
@@ -1034,7 +1036,7 @@ input[type="checkbox"] + label::before {
     border-radius: 5px;
     background: #f1f1f1;
 }
-.max-price {
+.maxPrice {
     text-align: right;
 }
 .feedbackForm textarea {
@@ -1091,6 +1093,7 @@ input[type="checkbox"] + label::before {
 .partnersLine {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
@@ -1123,6 +1126,18 @@ input[type="checkbox"] + label::before {
 .itemsCart {
     position: relative;
     margin-bottom: 24px;
+}
+.itemsCart::before {
+    content: "";
+    display: block;
+    width: 360px;
+    height: 40px;
+    background-image: url("../img/browser.svg");
+    background-repeat: no-repeat;
+    opacity: 0.12;
+}
+.itemsCart:hover::before {
+    opacity: 1;
 }
 .popUpExit {
     position: relative;
@@ -1175,7 +1190,6 @@ input[type="checkbox"] + label::before {
 }
 .variantsNetworkList li:hover {
     opacity: 1;
-    outline: auto;
 }
 .variantsNetworkList li:disabled {
     opacity: 0.1;

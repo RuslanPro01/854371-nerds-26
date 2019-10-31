@@ -84,24 +84,21 @@
   <section class="product">
     <h2 class="visuallyHidden">Что мы умеем</h2>
     <!--будет скрыто через visually hidden-->
-    <div class="productCart">
-      <div class="ilustration1"></div>
+    <div class="productCart productCart1">
       <p class="titleProductCart">ВЕБ-САЙТЫ</p>
       <p class="descriptionProductCart">Мир никогда не будет прежним после&#160;того как увидит ваш сайт!</p>
       <a href="#" class="order1">
       <span>ЗАКАЗАТЬ</span>
       </a>
     </div>
-    <div class="productCart">
-      <div class="ilustration2"></div>
+    <div class="productCart productCart2">
       <p class="titleProductCart">ПРИЛОЖЕНИЯ</p>
       <p class="descriptionProductCart">Покорите топ-10 приложений в AppStore и Google Play</p>
       <a href="#" class="order2">
       <span>ЗАКАЗАТЬ</span>
       </a>
     </div>
-    <div class="productCart">
-      <div class="ilustration3"></div>
+    <div class="productCart productCart3">
       <p class="titleProductCart">ПРЕЗЕНТАЦИИ</p>
       <p class="descriptionProductCart">Вы даже не подозреваете, насколько&#160;вы изумительны!</p>
       <a href="#" class="order3">
@@ -177,7 +174,7 @@
 </main>
 <footer class="footer">
   <div class="containerMap">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CGH5yNOm" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGH5yNOm" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
     <section class="map">
       <h2 class="visuallyHidden">Контакты</h2>
       <!--      будет скрыто через visually hidden-->
@@ -189,7 +186,9 @@
         <a href="tel:+78122757575">
         тел. +7 (812) 275-75-75
         </a>
-        <a href="#" class="WriteUs"><span>Напишите нам</span></a>
+        <a href="#" class="WriteUs">
+        <span>Напишите нам</span>
+        </a>
       </div>
     </section>
   </div>
@@ -216,16 +215,16 @@
   <form action="https://echo.htmlacademy.ru" class="feedbackForm" name="PopUp">
     <ul class="feedbackFormContainer">
       <li class="feedbackFormInput">
-        <label for="popUp_text">Ваше имя:</label>
-        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
+        <label for="popUp_text">Ваше Имя:</label>
+        <input class="feedbackFormFocus feedbackFormHover feedbackInputs" type="text" placeholder="Имя Фамилия" name="fullName" id="popUp_text">
       </li>
       <li class="feedbackFormInput">
         <label for="popUp_email">Ваш e-mail:</label>
-        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
+        <input class="feedbackFormFocus feedbackFormHover feedbackInputs" type="email" placeholder="email@example.com" name="email" id="popUp_email">
       </li>
     </ul>
     <label for="popUp_textarea">Текст письма:</label>
-    <textarea class="feedbackFormFocus feedbackFormHover feedbackFormInvalid" placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
+    <textarea class="feedbackFormFocus feedbackFormHover" placeholder="В свободной форме" name="comment" id="popUp_textarea"></textarea>
     <button class="popUpBtn" type="submit"><span>ОТПРАВИТЬ</span></button>
     <input class="popUpExit" type="button" value="." aria-label="Закрыть форму">
   </form>

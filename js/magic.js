@@ -3,39 +3,47 @@ var button = document.querySelector(".WriteUs");
 var modalPopUp = document.querySelector(".popUp");
 var closePopUp = modalPopUp.querySelector("input.popUpExit");
 var form = modalPopUp.querySelector("form");
-var flName = modalPopUp.querySelector("[name=FLName]");
-var email = modalPopUp.querySelector("[name=eMail]");
-var textArea = modalPopUp.querySelector("[name=comment]");
-//var submitForm = modalPopUp.querySelector("[type=submit]");
-
+var fullName = form.querySelector("[name=fullName]");
+var email = form.querySelector("[name=email]");
+var comment = form.querySelector("[name=comment]");
 
 button.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopUp.classList.add("popUpShow");
     modalPopUp.classList.add("popupOpenAnimate");
-    flName.focus();
+    setTimeout(() => {
+        modalPopUp.classList.remove("popupOpenAnimate");
+    }, 2000);
+    fullName.focus();
 });
 
-closePopUp.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modalPopUp.classList.add("popupClose");
-    modalPopUp.classList.remove("popUpShow");
-    modalPopUp.classList.remove("popupOpenAnimate");
-});
+closePopUp.addEventListener("click", closePopUpFnc);
 
-window.addEventListener("keydown", function (e) {
-    if (e.keyCode === 27) {
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
         if (modalPopUp.classList.contains("popUpShow")) {
-            e.preventDefault();
-            modalPopUp.classList.remove("popUpShow");
-            modalPopUp.classList.remove("popupOpenAnimate")
+            closePopUpFnc(evt);
         }
     }
 });
 
-form.addEventListener("submit", function (evt) {
-    if (!flName.value || !email.value || !textArea.value) {
+function closePopUpFnc(evt) {
     evt.preventDefault();
     modalPopUp.classList.add("popupClose");
+    modalPopUp.classList.add("popupOpenAnimate");
+
+    setTimeout(() => {
+        modalPopUp.classList.remove("popUpShow");
+        modalPopUp.classList.remove("popupOpenAnimate");
+        modalPopUp.classList.remove("popupError");
+    }, 800);
+}
+
+modalPopUp.addEventListener("submit", function (evt) {
+    if (!fullName.value || !email.value || !comment.value) {
+        evt.preventDefault();
+        modalPopUp.classList.remove("popupError");
+        modalPopUp.offsetWidth = modalPopUp.offsetWidth;
+        modalPopUp.classList.add("popupError");
     }
-});
+})

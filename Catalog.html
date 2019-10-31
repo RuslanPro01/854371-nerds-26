@@ -75,15 +75,15 @@
         <fieldset class="variantsNetwork">
           <legend>СЕТКА:</legend>
           <ul class="variantsNetworkList">
-            <li tabindex="0">
+            <li>
               <input class="filterInputRadio visuallyHidden" type="radio" id="Adaptive" name="Network" checked>
               <label for="Adaptive">Адаптивная</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputRadio visuallyHidden" type="radio" id="Fix" name="Network">
               <label for="Fix">Фиксированная</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputRadio visuallyHidden" type="radio" id="Rubber" name="Network">
               <label for="Rubber">Резиновая</label>
             </li>
@@ -96,19 +96,19 @@
               <input class="filterInputCheckbox visuallyHidden" type="checkbox"  id="Slid" name="Slider" checked>
               <label for="Slid">Слайдер</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Proper" name="Property">
               <label for="Proper">Блок преимуществ</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="New" name="News" checked>
               <label for="New">Новости</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Galar" name="Galary">
               <label for="Galar">Галерея</label>
             </li>
-            <li tabindex="0">
+            <li>
               <input class="filterInputCheckbox visuallyHidden" type="checkbox" id="Bas" name="Basket">
               <label for="Bas">Корзина</label>
             </li>
@@ -145,8 +145,6 @@
         <!--        будет скрыто через visually hidden-->
         <div class="itemsContainer">
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-sedona.jpg" alt="Проект Sedona" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -159,8 +157,6 @@
             </div>
           </div>
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-pink.jpg" alt="Проект Pink" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -173,8 +169,6 @@
             </div>
           </div>
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-barbershop.jpg" alt="Проект Barbershop" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -187,8 +181,6 @@
             </div>
           </div>
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-mishka.jpg" alt="Проект Mishka" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -201,8 +193,6 @@
             </div>
           </div>
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-aplus.jpg" alt="Проект A-Plus" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -215,8 +205,6 @@
             </div>
           </div>
           <div class="itemsCart">
-            <div class="itemHeader">
-            </div>
             <img src="img/img-kvast.jpg" alt="Проект Sedona" width="360" height="576">
             <div class="descriptionItem">
               <a href="#" class="titleProduct">
@@ -230,7 +218,7 @@
           </div>
         </div>
       </section>
-        <span class="visuallyHidden">Блок навгиции по страницам</span>
+      <span class="visuallyHidden">Блок навгиции по страницам</span>
       <div class="pages">
         <p class="pagesActive">1</p>
         <a href="#">
@@ -289,16 +277,16 @@
   <form action="https://echo.htmlacademy.ru" class="feedbackForm" name="PopUp">
     <ul class="feedbackFormContainer">
       <li class="feedbackFormInput">
-        <label for="popUp_text">Имя Фамилия:</label>
-        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="text" placeholder="Ваше Имя" name="FLName" id="popUp_text" required>
+        <label for="popUp_text">Ваше Имя:</label>
+        <input class="feedbackFormFocus feedbackFormHover feedbackInputs" type="text" placeholder="Имя Фамилия" name="fullName" id="popUp_text">
       </li>
       <li class="feedbackFormInput">
         <label for="popUp_email">Ваш e-mail:</label>
-        <input class="feedbackFormFocus feedbackFormHover feedbackFormInvalid feedbackInputs" type="email" placeholder="email@example.com" name="eMail" id="popUp_email" required>
+        <input class="feedbackFormFocus feedbackFormHover feedbackInputs" type="email" placeholder="email@example.com" name="email" id="popUp_email">
       </li>
     </ul>
     <label for="popUp_textarea">Текст письма:</label>
-    <textarea class="feedbackFormFocus feedbackFormHover feedbackFormInvalid" placeholder="В свободной форме" name="comment" id="popUp_textarea" required></textarea>
+    <textarea class="feedbackFormFocus feedbackFormHover" placeholder="В свободной форме" name="comment" id="popUp_textarea"></textarea>
     <button class="popUpBtn" type="submit"><span>ОТПРАВИТЬ</span></button>
     <input class="popUpExit" type="button" value="." aria-label="Закрыть форму">
   </form>
