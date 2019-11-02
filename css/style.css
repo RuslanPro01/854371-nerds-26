@@ -1209,7 +1209,7 @@ input[type="checkbox"] + label::before {
     outline: auto;
 }
 .filterInputCheckbox:focus + label,
-.filterInputChekbox:hover + label {
+.filterInputChekbox:hover {
     outline: auto;
 }
 .popupOpenAnimate {
