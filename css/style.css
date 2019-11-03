@@ -775,7 +775,7 @@ input[type="radio"] label::before {
 .vk:active {
   background-blend-mode: soft-light;
 }
-.Fb {
+.fb {
   background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
