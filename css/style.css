@@ -275,11 +275,11 @@ li {
   line-height: 24px;
   text-transform: uppercase;
 }
-.persent_container p:nth-child(1) {
+.persentContainer p:nth-child(1) {
   font-size: 45px;
   font-weight: 700;
 }
-.persent_container p:nth-child(2) {
+.persentContainer p:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -297,13 +297,13 @@ li {
 .aboutMePercent span {
   text-align: center;
 }
-.persent_container {
+.persentContainer {
   display: flex;
 }
-.persent_container div {
+.persentContainer div {
   width: 106px;
 }
-.persent_container div:nth-child(2n) {
+.persentContainer div:nth-child(2n) {
   margin: 0 14px;
 }
 .partnersContainer {
@@ -405,7 +405,7 @@ li {
   line-height: 18px;
   color: #666666;
 }
-.WriteUs {
+.writeUs {
   width: 219px;
   background-color: #fb565a;
   border: none;
@@ -419,13 +419,13 @@ li {
   padding-top: 17px;
   padding-bottom: 16px;
 }
-.WriteUs:hover {
+.writeUs:hover {
   background-color: #e74246;
 }
 .costProduct:hover {
   background-color: #e74246;
 }
-.WriteUs:active {
+.writeUs:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -433,13 +433,13 @@ li {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
-.WriteUs:active span {
+.writeUs:active span {
   opacity: 0.3
 }
 .costProduct:active span {
   opacity: 0.3
 }
-.Contacts {
+.contacts {
   width: 1160px;
   margin: 0 auto;
   display: flex;
@@ -600,7 +600,7 @@ label[for="popUp_textarea"] {
 .productSort a:focus {
   opacity: 1;
 }
-.PropertyBtn {
+.btnProperty {
   width: 260px;
   height: 50px;
   background-color: #eeeeee;
@@ -611,14 +611,14 @@ label[for="popUp_textarea"] {
   text-transform: uppercase;
   margin-top: 42px;
 }
-.PropertyBtn:hover {
+.btnProperty:hover {
   background-color: #dfdfdf;
 }
-.PropertyBtn:active {
+.btnProperty:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
-.PropertyBtn:active span {
+.btnProperty:active span {
   opacity: 0.3;
 }
 .pages {
@@ -751,7 +751,7 @@ input[type="radio"] label::before {
   display: flex;
   min-width: 260px;
 }
-.Social {
+.social {
   display: inline-block;
   vertical-align: baseline;
   width: 79px;
@@ -760,19 +760,19 @@ input[type="radio"] label::before {
   background-color: #e1e1e1;
   border-radius: 50%;
 }
-.Social:hover {
+.social:hover {
   background-color: #e74246;
 }
-.Social:active {
+.social:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
-.Vk {
+.vk {
   background-image: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.Vk:active {
+.vk:active {
   background-blend-mode: soft-light;
 }
 .Fb {
@@ -780,15 +780,15 @@ input[type="radio"] label::before {
   background-repeat: no-repeat;
   background-position: center;
 }
-.Fb:active {
+.fb:active {
   background-blend-mode: soft-light;
 }
-.Insta {
+.insta {
   background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.Insta:active {
+.insta:active {
   background-blend-mode: soft-light;
 }
 .logotype:hover {
@@ -796,14 +796,6 @@ input[type="radio"] label::before {
 }
 .logotype:active {
   opacity: 0.3
-}
-.items_cart {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 360px;
-  min-height: 231px;
-  background-color: #eeeeee;
 }
 .titleProduct, .descriptionProduct, .costProduct {
   display: block;
@@ -827,16 +819,6 @@ input[type="radio"] label::before {
   transform: translateX(50px)translateY(47px);
   display: flex;
   flex-direction: column;
-}
-.container__mapText p {
-  padding-top: 2px;
-}
-.container__mapText address {
-  margin-top: 22px;
-}
-.container__mapText a {
-  margin-top: 20px;
-  padding-left: 2px;
 }
 form fieldset {
   border: none;
