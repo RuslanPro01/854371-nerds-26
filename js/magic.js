@@ -1,5 +1,5 @@
 // JavaScript Document
-var button = document.querySelector(".WriteUs");
+var button = document.querySelector(".writeUs");
 var modalPopUp = document.querySelector(".popUp");
 var closePopUp = modalPopUp.querySelector("input.popUpExit");
 var form = modalPopUp.querySelector("form");

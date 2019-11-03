@@ -263,11 +263,11 @@ li {
 .aboutMeText li::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  margin: 0 11px 4px -37px;
+  margin: 5px 11px 4px -37px;
 }
 .aboutMePercent span {
   font-size: 16px;
@@ -695,7 +695,7 @@ input[type="radio"] label::before {
 .sliderControls i {
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   cursor: pointer;
@@ -753,7 +753,7 @@ input[type="radio"] label::before {
 }
 .social {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 79px;
   height: 79px;
   margin-right: 12px;
@@ -853,7 +853,7 @@ form fieldset {
 input[type="radio"]:checked + label::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-on.svg");
@@ -864,7 +864,7 @@ input[type="radio"]:checked + label::before {
 input[type="radio"] + label::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
@@ -875,7 +875,7 @@ input[type="radio"] + label::before {
 input[type="checkbox"]:checked + label::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-on.svg");
@@ -954,7 +954,7 @@ input[type="checkbox"] + label::before {
   width: 44px;
   height: 44px;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   text-align: center;
   margin-right: 11px;
 }
@@ -1001,7 +1001,7 @@ input[type="checkbox"] + label::before {
 }
 .priceControls label {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -1047,7 +1047,7 @@ input[type="checkbox"] + label::before {
 .sliderControls {
   position: absolute;
   left: 555px;
-  top: 305px;
+  top: 301px;
 }
 .sliderControls i:nth-child(2) {
   margin: 0 14px;
@@ -1075,7 +1075,7 @@ input[type="checkbox"] + label::before {
 .partnersLine {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
